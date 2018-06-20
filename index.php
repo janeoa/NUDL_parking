@@ -1,3 +1,6 @@
+<?php
+$root = realpath($_SERVER["DOCUMENT_ROOT"]);
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -42,24 +45,7 @@
 			    100% {right: 10%; transform: rotate(0); top:44%;}
 			}
 		</style>
-		
-		<script>
-			$(document).ready(function(){
-				adapt();
-				$(".at-under").addClass("w3-border-bottom w3-border-black w3-hover-border-orange ");
-			});
-			
-			$(function () {
-			  $(document).scroll(function () {
-			    adapt();
-			  });
-			});
-			
-			function adapt(){
-				var $nav = $(".navbar-fixed-top");
-			    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-			}
-		</script>
+
 	</head>
 	
 	<body>
@@ -77,14 +63,22 @@
 				<div class="w3-border-white w3-border-left" style="padding-left: 10px;">
 					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
 				</div>
-				<div class="w3-row" style="margin-top: 60px; text-align: center; font-size: 18px;">
-					<div class="w3-col w3-display-container" style="border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
-						<div class="w3-display-middle">подробнее</div>
-					</div>
-					<div class="w3-col w3-display-container" style="border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
-						<div class="w3-display-middle">Заказать</div>
-					</div>
-				</div>
+                <div class="w3-row w3-hide-small" style="margin-top: 60px; text-align: center; font-size: 18px;">
+                    <div class="w3-col w3-display-container" style="border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
+                        <div class="w3-display-middle">подробнее</div>
+                    </div>
+                    <div class="w3-col w3-display-container" style="border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
+                        <div class="w3-display-middle">Заказать</div>
+                    </div>
+                </div>
+                <div class="w3-hide-large w3-hide-medium" style="margin-top: 60px; text-align: center; font-size: 18px;">
+                    <div class="w3-display-container" style="border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
+                        <div class="w3-display-middle">подробнее</div>
+                    </div>
+                    <div class="w3-display-container" style="border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
+                        <div class="w3-display-middle">Заказать</div>
+                    </div>
+                </div>
 			</div>
 			<div id="cars">
 				<style>
@@ -106,28 +100,28 @@
 			</div>
 		</div>
 		
-		<div style="width: 80%; min-width: 700px; margin: 50px auto 20px auto; color: black;" id="second">
+		<div style="width: 80%; margin: 50px auto 20px auto; color: black;" id="second">
 			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">Почему мы?</span></h2>
 			<div class="w3-row" style="font-family: AvenirNext-DemiBold; font-size: 20px;">
-				<div class="w3-quarter at-wedo">
+				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="fas fa-cogs"></i></div>
 					</div>
 					<p>Производим оборудование и ПО</p>
 				</div>
-				<div class="w3-quarter at-wedo">
+				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="fas fa-clipboard-check"></i></div>
 					</div>
 					<p>Производим оборудование и ПО</p>
 				</div>
-				<div class="w3-quarter at-wedo">
+				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="far fa-clock"></i></div>
 					</div>
 					<p>Производим оборудование и ПО</p>
 				</div>
-				<div class="w3-quarter at-wedo">
+				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="far fa-comment-dots"></i></div>
 					</div>

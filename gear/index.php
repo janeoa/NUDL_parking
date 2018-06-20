@@ -1,3 +1,6 @@
+<?php
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,53 +14,20 @@
 
         <style>
             html, body{
-                font-family: AvenirNext-Regular;
+                font-family: "AvenirNext-Regular";
                 background-image: url('../img/first.jpg');
                 background-position: center center;
                 background-repeat: no-repeat;
             }
         </style>
 
-		<script>
-			$(document).ready(function(){
-				adapt();
-				$(".at-under").addClass("w3-border-bottom w3-border-black w3-hover-border-orange ");
-			});
-			
-			$(function () {
-			  $(document).scroll(function () {
-			    adapt();
-			  });
-			});
-			
-			function adapt(){
-				var $nav = $(".navbar-fixed-top");
-			    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-			}
-		</script>
 	</head>
 	
 	<body>
-		<div id="nav" class="w3-top navbar-fixed-top" style="padding: 67px 10% 67px 25%;"  >
-			<div class="w3-row">
-				<div class="w3-col at-nav">
-					<a href="../" style="text-decoration: none"><span class="at-under">Главная</span></a>
-				</div>
-				<div class="w3-col at-nav">
-					<a href="../systems/" style="text-decoration: none"><span class="at-under">Системы</span></a>
-				</div>
-				<div class="w3-col at-nav" style="width: 24% !important">
-					<span class="at-under" style="border-color: #efa426 !important">Оборудование</span>
-				</div>
-				<div class="w3-col at-nav">
-					<span class="at-under">Контакты</span>
-				</div>
-				<div class="w3-rest w3-right" style="border-radius: 13.5px; border: solid 1px #979797; padding: 0 3px;">
-					<span><i class="fas fa-phone" style="transform: rotate(90deg); color: #f5a623"></i></span>
-					862-902-2352
-				</div>
-			</div>
-		</div>
+        <!--NAV -->
+        <?php
+            include("$root/common/navbar.php");
+        ?>
 		
 		<div id="logo" style="margin-top:67px; margin-left: 10%">
 			LOGO
