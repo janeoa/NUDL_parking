@@ -20,4 +20,18 @@
 			862-902-2352
 		</div>
 	</div>
+    <div class="w3-bar-block" style="width: 100%; background-color: rgba(0,0,0,0.2)">
+        <div class="w3-bar-item w3-button">
+            <a href="/" style="text-decoration: none;"><span class="at-under" style="<?php if($dir=="main") echo 'border-color: #efa426 !important; '; ?>">Главная</span></a>
+        </div>
+        <div class="w3-bar-item w3-button">
+            <a href="/systems/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="systems") echo 'border-color: #efa426 !important; '; ?>">Системы</span></a>
+        </div>
+        <div class="w3-bar-item w3-button">
+            <a href="/gear/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="gear") echo 'border-color: #efa426 !important; '; ?>">Оборудование</span></a>
+        </div>
+        <div class="w3-bar-item w3-button">
+            <a href="/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="contacts") echo 'border-color: #efa426 !important; '; ?>">Контакты</span></a>
+        </div>
+    </div>
 </div>
