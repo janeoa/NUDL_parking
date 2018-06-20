@@ -1,0 +1,54 @@
+.at-nav{
+	width: 15%;
+}
+
+.accent-coloor{
+	color: #efa426;
+}
+
+html, body{
+	height: 100%;
+	color: white;
+    font-family: AvenirNext-Regular;
+}
+.at-circle{
+	width: 161px;
+	height: 157px;
+	border: solid 6px #efa426;
+	border-radius: 50%;
+	color: #f5a623;
+	margin: auto
+}
+.at-wedo{
+	padding: 20px;
+	text-align: center
+}
+
+.navbar-fixed-top.scrolled {
+	background-color: black !important;
+	padding: 10px 10% 10px 10% !important;
+	transition: background-color 200ms linear, padding 200ms linear;
+}
+
+.at-bg-R{
+	background-color: #efa426;
+	left: 3px;
+	position: absolute;
+	right: 2px;
+	top: 15px;
+	bottom: 20px;
+	/* 			    z-index: -1; */
+}
+
+@media only screen and (max-width: 700px) {
+
+}
+
+@media only screen and (max-width: 400px){
+    #nav{
+        padding: 20px 10% 67px 25% !important;
+    }
+    #logo{
+        top: 20px !important;
+    }
+}
