@@ -2,6 +2,19 @@
     .at-under{
         border-color: rgba(0,0,0,0) !important;
     }
+    .navbar-fixed-top.scrolled {
+        background-color: black !important;
+        padding: 10px 10% 10px 10% !important;
+        transition: background-color 200ms linear, padding 200ms linear;
+    }
+    @media only screen and (max-width: 400px){
+        #nav{
+            padding: 20px 10% 67px 25% !important;
+        }
+        #logo{
+            top: 20px !important;
+        }
+    }
 </style>
 
 <div id="nav" class="w3-top navbar-fixed-top" style="padding: 67px 3% 67px 25%;"  >
@@ -21,7 +34,7 @@
 				<a href="/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="contacts") echo 'border-color: #efa426 !important; '; ?>">Контакты</span></a>
 			</div>
 		</div>
-		<div class="w3-rest w3-right" style="/*border-radius: 13.5px; border: solid 1px #979797;*/text-align: right; padding: 0 3px;">
+		<div class="w3-rest w3-right" style="text-align: right; padding: 0 3px;">
 			<span><i class="fas fa-phone" style="transform: rotate(90deg); color: #f5a623"></i></span>
 			862-902-2352
 		</div>

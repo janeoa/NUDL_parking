@@ -15,6 +15,10 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		
 		<style>
 
+            .at-car{
+                pointer-events: none;
+            }
+
 			#car2 {
 			    position: absolute; right: 30%; transform: rotate(27deg);top:48%; height: 20%;
 			}
@@ -28,7 +32,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 				}
 			}
 			
-			@media only screen and (max-width: 400px){
+			@media only screen and (max-width: 601px){
 				#firsth11{
 					font-size: 7vw !important;
 					padding-right: 40%;
@@ -37,6 +41,12 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 					font-size: 4vw !important;
 					margin-top: 20px !important;
 				}
+                .at-car{
+                    opacity: 0.5;
+                }
+                #third{
+                    zoom: 50%;
+                }
 			}
 			
 			@keyframes parkCar2 {
@@ -44,6 +54,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			    40% {right: 22%; transform: rotate(24deg);top:47%;}
 			    100% {right: 10%; transform: rotate(0); top:44%;}
 			}
+
 		</style>
 
 	</head>
@@ -64,27 +75,25 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
 				</div>
                 <div class="w3-row w3-hide-small" style="margin-top: 60px; text-align: center; font-size: 18px;">
-                    <div class="w3-col w3-display-container" style="border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
+                    <div class="w3-col w3-display-container" style="cursor: pointer; border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
                         <div class="w3-display-middle">подробнее</div>
                     </div>
-                    <div class="w3-col w3-display-container" style="border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
+                    <div class="w3-col w3-display-container" style="cursor: pointer; border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
                         <div class="w3-display-middle">Заказать</div>
                     </div>
                 </div>
                 <div class="w3-hide-large w3-hide-medium" style="margin-top: 60px; text-align: center; font-size: 18px;">
-                    <div class="w3-display-container" style="border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
+                    <div class="w3-cell w3-display-container w3-mobile" style="cursor: pointer; border-radius: 8px 8px 0px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;">
                         <div class="w3-display-middle">подробнее</div>
                     </div>
-                    <div class="w3-display-container" style="border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
+                    <div class="w3-cell w3-display-container w3-mobile" style="cursor: pointer; border-radius: 0px 0px 8px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
                         <div class="w3-display-middle">Заказать</div>
                     </div>
                 </div>
 			</div>
+
 			<div id="cars">
-				<style>
-						
-					</style>
-				<div style="position: absolute; right: 10%; height: 20%; top:20%" class="at-car">
+				<div id="" style="position: absolute; right: 10%; height: 20%; top:20%;" class="at-car">
 					<img src="img/car.png" width="auto" height="100%"/>
 				</div>
 				<div id="car2" style="" class="at-car">
@@ -142,43 +151,16 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 					</div>
 					<div class="w3-rest" style="padding-top: 44px">
 						<h2 style="font-size: 31px; font-family: AvenirNext-Regular; text-transform: uppercase"><span style="display: none;">Р</span>азрабатываем решения для автоматизации платных парковок по всей России и ближнему зарубежью
-							&nbsp;<img src="img/arrow-right.png" height="31px" width="auto" alt="decorative arrow" style="cursor: pointer"/></h2>
+							&nbsp;<img class="" src="img/arrow-right.png" height="31px" width="auto" alt="decorative arrow" style="cursor: pointer"/></h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div style="margin: 50px auto" id="four">
-			<h2 style="color: black; text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">НАШИ ПРОЕКТЫ</span></h2>
-			<div style="background-color: #f5a623; width: 90%; max-width: 1000px; margin: auto" class="w3-row">
-				<div class="w3-half" style="height: 100%; padding-top: 50px; color: white">
-					<h3 style="text-indent: 68px; color: #333333; font-family: AvenirNext-Medium; font-size: 2vw;">ТОРГОВЫЕ И БИЗНЕС ЦЕНТРЫ</h3>
-					<div style="padding: 0px 53px 0px 28px; font-family: AvenirNext-Regular; font-size: 1.8vw;">
-						<ul>
-							<li>Организация работы собственника с арендатором;</li>
-							<li>Организация работы арендаторов с гостями;</li>
-							<li>Комфортное использование парковочного пространства посетителями бизнес-центра или торгового центра</li>
-						</ul>
-					</div>
-				</div>
-				<div class="w3-half" style="height: 100%;">
-					<img src="img/four.jpg" height="auto" width="100%"/>
-				</div>
-			</div>
-		</div>
-		
-		<div style="margin-top: 80px;width: 100%; height: 211px; background-color: #434343;" id="footer">
-			<div class="w3-row" style="width: 400px; margin: auto">
-				<div class="w3-third">
-					<i class="fab fa-facebook-square"></i>
-				</div>
-				<div class="w3-third">
-					<i class="fas fa-street-view"></i>
-				</div>
-				<div class="w3-third">
-					<i class="fab fa-instagram"></i>
-				</div>
-			</div>
-		</div>
+        <?php
+        include ("$root/four.html");
+        //include ("$root/common/footer.html");
+        ?>
+
 	</body>
 </html>

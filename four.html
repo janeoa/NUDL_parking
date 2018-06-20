@@ -1,0 +1,49 @@
+<div style="margin: 50px auto" id="four">
+    <h2 style="color: black; text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">НАШИ ПРОЕКТЫ</span></h2>
+    <div id="slidesOfFour" style="background-color: #f5a623; width: 90%; max-width: 1000px; margin: auto" class="w3-row">
+        <div class="w3-half w3-mobile" style="height: 100%; padding-top: 50px; color: white">
+            <h3 id="titleOfFour" style="text-transform: uppercase ;text-indent: 68px; color: #333333; font-family: AvenirNext-Medium; font-size: 2vw;"></h3>
+            <div style="padding: 0px 53px 0px 28px; font-family: AvenirNext-Regular; font-size: 1.8vw;">
+                <ul id="listOfFour">
+
+                </ul>
+            </div>
+        </div>
+        <div id="thePickOfFour" class="w3-half w3-mobile" style="height: 100%;">
+            <img src="img/four.jpg" height="auto" width="100%"/>
+        </div>
+    </div>
+</div>
+
+<script>
+    var contentOfFour = {
+        headinds:[
+            "ТОРГОВЫЕ И БИЗНЕС ЦЕНТРЫ"
+        ],
+        lists:[
+            [
+                "Организация работы собственника с арендатором;",
+                "Организация работы арендаторов с гостями;",
+                "Комфортное использование парковочного пространства посетителями бизнес-центра или торгового центра"
+            ]
+        ]
+    }
+    $(document).ready(function () {
+        fillFour(0);
+    });
+
+    function fillFour(id) {
+        $("#titleOfFour").text(contentOfFour.headinds[id]);
+        for (var i=0; i<contentOfFour.lists[id].length; i++){
+            $("#listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
+        }
+    }
+</script>
+
+<style>
+    @media only screen and (max-width: 601px){
+        #slidesOfFour{
+            width: 80% !important;
+        }
+    }
+</style>

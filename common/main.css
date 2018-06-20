@@ -24,12 +24,6 @@ html, body{
 	text-align: center
 }
 
-.navbar-fixed-top.scrolled {
-	background-color: black !important;
-	padding: 10px 10% 10px 10% !important;
-	transition: background-color 200ms linear, padding 200ms linear;
-}
-
 .at-bg-R{
 	background-color: #efa426;
 	left: 3px;
@@ -38,17 +32,4 @@ html, body{
 	top: 15px;
 	bottom: 20px;
 	/* 			    z-index: -1; */
-}
-
-@media only screen and (max-width: 700px) {
-
-}
-
-@media only screen and (max-width: 400px){
-    #nav{
-        padding: 20px 10% 67px 25% !important;
-    }
-    #logo{
-        top: 20px !important;
-    }
 }
