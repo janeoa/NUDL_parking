@@ -186,6 +186,8 @@
 
 		</div>
 
+        <div style=" height: 100px; width: 1px;"></div>
+
         <div class="w3-cell-row" style="width: 80%; margin: 80px auto;">
             <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen2"onclick="openStoika('zjeton'); $('.chosen2').removeClass('chosen2'); $(this).addClass('chosen2');">Двухсторонняя стойка въезда-выезда на жетонах</div>
             <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika('IO'); $('.chosen2').removeClass('chosen2'); $(this).addClass('chosen2');">Стойка въезда-выезда</div>
@@ -283,7 +285,8 @@
                 </div>
             </div>
         </div>
-		
+
+        <div style="height: 150px ; width: 1px;"></div>
 		<?php include "$root/common/footer.html"; ?>
 	</body>
 </html>
