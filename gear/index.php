@@ -143,7 +143,7 @@
             <div id="light" class="kassa" style="margin-top: 60px; display: block">
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT</h2>
-                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран <a href="#" class="accent-coloor w3-right">далее</a>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран <a href="/gear/details/?gear=light" class="accent-coloor w3-right">далее</a>
                 </div>
                 <div class="w3-cell w3-hide-small w3-hide-medium" style="height: 300px; width: 50%;">
                     <div style="position: relative; ">
@@ -164,7 +164,7 @@
             <div id="standart" class="kassa" style="margin-top: 60px;">
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА STANDARD</h2>
-                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Многофункциональная автоматизированная касса для оплаты услуг парковки - устройство премиум класса в линейке RPS. Высочайшая надежность... <a href="#" class="accent-coloor w3-right">далее</a>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Многофункциональная автоматизированная касса для оплаты услуг парковки - устройство премиум класса в линейке RPS. Высочайшая надежность... <a href="/gear/details/?gear=standart" class="accent-coloor w3-right">далее</a>
                 </div>
                 <div class="w3-cell w3-hide-small w3-hide-medium" style="height: 300px; width: 50%;">
                     <div style="position: relative; ">
@@ -210,7 +210,7 @@
                 </div>
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">Двухсторонняя стойка въезда-выезда на жетонах</h2>
-                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Двухсторонняя стойка одновременно выполняет функции въездной и выездной стойки. Такая конструкция исключает необходимость ... <a href="#" class="accent-coloor w3-right">далее</a>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Двухсторонняя стойка одновременно выполняет функции въездной и выездной стойки. Такая конструкция исключает необходимость ... <a href="/gear/details/?gear=zjeton" class="accent-coloor w3-right">далее</a>
                 </div>
             </div>
         </div>
@@ -234,7 +234,7 @@
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">СТОЙКА ВЪЕЗДА-ВЫЕЗДА</h2>
                     <p style="font-family: AvenirNext-Regular; font-size: 24px;">Обеспечивают доступ клиента на парковку, управляя периферийными устройствами.
-                        Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и ... <a href="#" class="accent-coloor w3-right">далее</a>
+                        Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и ... <a href="/gear/details/?gear=IO" class="accent-coloor w3-right">далее</a>
                 </div>
             </div>
         </div>
@@ -256,7 +256,7 @@
                 </div>
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">СТОЙКА ВЪЕЗДА-ВЫЕЗДА НА ЖЕТОНАХ</h2>
-                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать ... <a href="#" class="accent-coloor w3-right">далее</a>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать ... <a href="/gear/details/?gear=IOzjeton" class="accent-coloor w3-right">далее</a>
                 </div>
             </div>
         </div>
@@ -278,7 +278,7 @@
                 </div>
                 <div class="w3-cell w3-container" style="width: 50%;">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">ДВУХУРОВНЕВАЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА</h2>
-                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым ... <a href="#" class="accent-coloor w3-right">далее</a>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым ... <a href="/gear/details/?gear=doubleIO" class="accent-coloor w3-right">далее</a>
                 </div>
             </div>
         </div>
