@@ -6,6 +6,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>Оборудование</title>
+        <?php $dir="gear";?>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -99,18 +100,6 @@
 			</div>
 		</div>
 		
-		<div style="margin-top: 80px;width: 100%; height: 211px; background-color: #434343;" id="footer">
-			<div class="w3-row" style="width: 400px; margin: auto">
-				<div class="w3-third">
-					<i class="fab fa-facebook-square"></i>
-				</div>
-				<div class="w3-third">
-					<i class="fas fa-street-view"></i>
-				</div>
-				<div class="w3-third">
-					<i class="fab fa-instagram"></i>
-				</div>
-			</div>
-		</div>
+		<?php include "$root/common/footer.html"; ?>
 	</body>
 </html>
