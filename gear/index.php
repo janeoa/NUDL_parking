@@ -44,6 +44,7 @@
 				padding: 13px 3px;
 				text-align: center;
 				cursor: pointer;
+                width: 33%;
 			}
 			
 			.at-tab-butt.chosen{
@@ -62,17 +63,23 @@
 		</style>
 		
 		<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: 40px auto 0 auto"> 
-			<div class="w3-row" style="font-family: AvenirNext-Medium; font-size: 18px;">
-				<div class="w3-third">
+			<div class="w3-cell-row" style="font-family: AvenirNext-Medium; font-size: 18px;">
+				<div class="w3-cell at-tab-butt chosen">
 					<div class="at-tab-butt chosen">Парковочная касса LIGHT</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-cell at-tab-butt">
 					<div class="at-tab-butt">Парковочная касса STANDARD</div>
 				</div>
-				<div class="w3-third">
+				<div class="w3-cell at-tab-butt">
 					<div class="at-tab-butt">Паркоматы</div>
 				</div>
 			</div>
+
+            <div class="w3-cell-row">
+                <div class="w3-cell">Парковочная касса LIGHT</div>
+                <div class="w3-cell">Парковочная касса STANDARD</div>
+                <div class="w3-cell">Паркоматы</div>
+            </div>
 			
 			<div class="" style="margin-top: 60px;">
 				<div class="w3-cell w3-container" style="width: 50%;">

@@ -12,23 +12,24 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
 		<link rel="stylesheet" href="/common/main.css"/>
+        <link rel="stylesheet" href="/common/tooltip.css">
 		
 		<style>
 			
 			.whyIcons{
-				width: 100%;
+				width: 30%;
 				height: auto;
 			}
 			
 			.whyContainers{
 				width: 20%;
-				border: solid black;
 			}
 
             body{
                 background-image: url("blurred.png");
                 background-repeat: no-repeat;
                 background-position: center center;
+                background-size: cover;
             }
 
             .at-bold{
@@ -44,8 +45,26 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 text-align: center;
             }
 
-            .whyContainers p{
-                text-transform: uppercase
+            p.at-DemiDold{
+                font-family: AvenirNext-DemiBold; text-transform: uppercase;
+            }
+
+            @media screen and (max-width: 993px){
+                #why{
+                    zoom: 0.6;
+                }
+                .tooltiptext{
+                    zoom: 1.6;
+                }
+            }
+
+            @media screen and (max-width: 600px){
+                #why{
+                    zoom: 0.4;
+                }
+                .tooltiptext{
+                    zoom: 2;
+                }
             }
 		</style>
 
@@ -64,35 +83,45 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			<h1 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px; margin-top: 10%;">АВТОМАТИЗИРОВАННАЯ СИСТЕМА УПРАВЛЕНИЯ ПЛАТНОЙ ПАРКОВКОЙ</h1>
 			<p style="font-family: AvenirNext-MediumItalic; max-width: 817px; margin: auto">Автоматизирует контроль над въездом и выездом машин на стоянку и процесс оплаты использования парковочного пространства.</p>
 		</div>
-		
-		<div class="w3-container accent-coloor" style="text-align: center;" id="why">
-			<h2 class="at-bold" style="">Зачем устанавливать</h2>
-			<div class="w3-row w3-green" style="font-family: AvenirNext-DemiBold; font-size: 24px; width: 80%; margin: auto">
-				<div class="whyContainers w3-container w3-yellow w3-col">
-					<img class="whyIcons w3-red" src="why/profitable.png"/>
-					<p>выгода</p>
-				</div>
-				<div class="whyContainers w3-container w3-col">
-					<img class="whyIcons" src="why/fast.png"/>
-					<p>быстрота</p>
-				</div>
-				<div class="whyContainers w3-container w3-col">
-					<img class="whyIcons" src="why/security.png"/>
-					<p>безопасность</p>
-				</div>
-				<div class="whyContainers w3-container w3-col">
-					<img class="whyIcons" src="why/control.png"/>
-					<p>контроль</p>
-				</div>
-				<div class="whyContainers w3-container w3-col">
-					<img class="whyIcons" src="why/comfort.png"/>
-					<p>комфорт</p>
-				</div>
-			</div>
-		</div>
+
+        <div class="w3-container accent-coloor" style="text-align: center; margin-bottom: 200px" id="why">
+            <h2 class="at-bold" style="margin-bottom: 60px;">Зачем устанавливать</h2>
+            <div class="w3-cell-row" style="font-size: 24px; width: 80%; margin: auto">
+                <div class="w3-cell" style="padding: 5px;"><div class="tooltip"><img class="" style="height: 60px;" src="why/profitable.png"/><p class="at-DemiDold">выгода</p><p class="tooltiptext">Сокращение количества персонала. Повышение прибыли с платной парковки</p></div></div>
+                <div class="w3-cell" style="padding: 5px;"><div class="tooltip"><img class="" style="height: 60px;" src="why/fast.png"/><p class="at-DemiDold">быстрота</p><p class="tooltiptext">Эффективное управление пропускной способностью платной парковки</p></div></div>
+                <div class="w3-cell" style="padding: 5px;"><div class="tooltip"><img class="" style="height: 60px;" src="why/security.png"/><p class="at-DemiDold">безопастность</p><p class="tooltiptext">Уменьшение числа злоупотреблений со стороны клиентов и персонала. Предотвращение угона транспортных средств.</p></div></div>
+                <div class="w3-cell" style="padding: 5px;"><div class="tooltip"><img class="" style="height: 60px;" src="why/control.png"/><p class="at-DemiDold">контроль</p><p class="tooltiptext">Подробная финансовая отчётность и анализ</p></div></div>
+                <div class="w3-cell" style="padding: 5px;"><div class="tooltip"><img class="" style="height: 60px;" src="why/comfort.png"/><p class="at-DemiDold">комфорт</p><p class="tooltiptext">Как для клиента, так и для владельца парковки</p></div></div>
+
+            </div>
+        </div>
 
         <div class="w3-container" id="benefits">
             <h2 class="at-bold">наши возможности</h2>
+
+            <div style="position: relative; height: 600px;">
+                <img width="60%" height="auto" style="position: absolute; left: 20%;" src="flags.png"/>
+                <div id="benefits_h" style="color: white;">
+                    <style>
+                        .at-flag{
+                            position: absolute;
+                            padding-right: 5%;
+                            text-transform: uppercase;
+                            border-bottom: solid 1px rgba(255,255,255, 0.3);
+                        }
+                    </style>
+                    <p class="at-flag">Разовые, постоянные клиенты</p>
+                    <p class="at-flag">Оплата</p>
+                    <p class="at-flag">Контроль доступа клиентов</p>
+                    <p class="at-flag">Абонементы</p>
+                    <p class="at-flag">Безопасность и распознавание номеров ТС</p>
+                    <p class="at-flag">Стабильность и отказоустойчивость</p>
+                    <p class="at-flag">Программы лояльности для постоянных клиентов</p>
+                    <p class="at-flag">Неограниченные возможности тарифного калькулятора</p>
+                    <p class="at-flag" style="left: 0; bottom:16%">Online рабочая станция<br> для управления системой</p>
+
+                </div>
+            </div>
         </div>
 
         <div class="w3-container" id="areas">
