@@ -7,6 +7,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<meta charset="utf-8"/>
 		<title>Parking. Главная</title>
 		<?php $dir = "main"; ?>
+        <meta name="author" content="Asset Malik"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

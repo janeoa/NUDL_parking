@@ -7,6 +7,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<meta charset="utf-8"/>
 		<title>Системы</title>
 		<?php $dir = "systems"; ?>
+        <meta name="author" content="Asset Malik"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="/common/w3.css"/>
         <script src="/common/jquery.min.js"></script>

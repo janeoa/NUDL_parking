@@ -7,6 +7,7 @@
 		<meta charset="utf-8"/>
 		<title>Оборудование</title>
         <?php $dir="gear";?>
+        <meta name="author" content="Asset Malik"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="/common/w3.css"/>
 		<script src="/common/jquery.min.js"></script>
