@@ -18,7 +18,7 @@
                 font-family: "AvenirNext-Regular";
                 background-image: url('../img/first.jpg');
                 background-position: center center;
-                background-repeat: no-repeat;
+                background-repeat: repeat-y;
             }
         </style>
 
@@ -40,12 +40,15 @@
 		
 		<style>
 			.at-tab-butt{
-				margin: 0 10px;
 				padding: 13px 3px;
 				text-align: center;
 				cursor: pointer;
                 width: 33%;
 			}
+
+            .at-tab-butt2{
+                width: 25%!important;
+            }
 			
 			.at-tab-butt.chosen{
 				padding: 11px 1px;
@@ -62,23 +65,12 @@
 			}
 		</style>
 		
-		<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: 40px auto 0 auto"> 
-			<div class="w3-cell-row" style="font-family: AvenirNext-Medium; font-size: 18px;">
-				<div class="w3-cell at-tab-butt chosen">
-					<div class="at-tab-butt chosen">Парковочная касса LIGHT</div>
-				</div>
-				<div class="w3-cell at-tab-butt">
-					<div class="at-tab-butt">Парковочная касса STANDARD</div>
-				</div>
-				<div class="w3-cell at-tab-butt">
-					<div class="at-tab-butt">Паркоматы</div>
-				</div>
-			</div>
+		<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: 40px auto 0 auto">
 
             <div class="w3-cell-row">
-                <div class="w3-cell">Парковочная касса LIGHT</div>
-                <div class="w3-cell">Парковочная касса STANDARD</div>
-                <div class="w3-cell">Паркоматы</div>
+                <div class="w3-cell w3-cell-middle at-tab-butt chosen">Парковочная касса LIGHT</div>
+                <div class="w3-cell w3-cell-middle at-tab-butt">Парковочная касса STANDARD</div>
+                <div class="w3-cell w3-cell-middle at-tab-butt">Паркоматы</div>
             </div>
 			
 			<div class="" style="margin-top: 60px;">
@@ -86,26 +78,70 @@
 					<h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT</h2>
 					<p style="font-family: AvenirNext-Regular; font-size: 24px;">Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран <a href="#" class="accent-coloor w3-right">далее</a>
 				</div>
-				<div class="w3-cell w3-red" style="height: 300px; width: 50%;">
-					<div style="position: relative; height: 100%">
-						<div id="semiOpaque" class="w3-card-4" style="height: 300px; position: absolute; top: 20px; left: 0; bottom: 20px; right: 0; background-color: white; opacity: 0.2"></div>
+				<div class="w3-cell w3-hide-small w3-hide-medium" style="height: 300px; width: 50%;">
+					<div style="position: relative; ">
+						<div id="semiOpaque" class="w3-card-4" style="height: 350px; position: absolute; top: 20px; left: 0; bottom: 20px; right: 0; background-color: white; opacity: 0.2"></div>
 						<div id="" style="position: absolute; left: 15%; top: 0; right: 15%; bottom: 0; background-color: white">
-							<!--div style="position: relative;">
-								<img style="position: absolute" src="gear_photo/1.jpg" height="80%" width="auto"/>
-								<div style="position: relative; bottom: 0; height: 20%; font-family: AvenirNext-DemiBold; font-size: 20px; background-color: rgb(152,152,152); text-align: center; padding: 10px;">АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT</div>
-							</div-->
-							<!--div class="w3-display-container">
-								<div class="w3-display-topmiddle">
-									<img style="padding: 0; margin: 0; height: 80%; width: auto" src="gear_photo/1.jpg"/>
-								</div>
-								<div class="w3-display-bottommiddle">
-								</div>
-							</div-->
+							<img class="ss1" src="gear_photo/1.jpg" width="100%" height="auto">
+                            <img class="ss1" src="gear_photo/light2.png" width="100%" height="auto">
+                            <div style="width: 100%; background-color: #494949; text-align: center; padding: 10px">
+                                АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT
+                            </div>
 						</div>
-					</div>
+                        <div class="w3-button w3-black" onclick="plusDivs(-1)" style="position: absolute; left: 0; top: 180px">&#10094;</div>
+                        <div class="w3-button w3-black" onclick="plusDivs(1)" style="position: absolute; right: 0; top: 180px">&#10095;</div>
+                        <script>
+                            var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                                showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                                var i;
+                                var x = document.getElementsByClassName("ss1");
+                                if (n > x.length) {slideIndex = 1}
+                                if (n < 1) {slideIndex = x.length}
+                                for (i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                                x[slideIndex-1].style.display = "block";
+                            }
+                        </script>
+                    </div>
 				</div>
 			</div>
 		</div>
+
+        <div class="w3-cell-row" style="width: 80%; margin: 80px auto;">
+            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen">Двухсторонняя стойка въезда-выезда на жетонах</div>
+            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2">Стойка въезда-выезда</div>
+            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2">Стойка въезда-выезда на жетонах</div>
+            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2">Двухуровневая стойка въезда-выезда</div>
+        </div>
+
+        <div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: auto">
+            <div class="" style="">
+                <div class="w3-cell w3-hide-small w3-hide-medium" style="height: 300px; width: 50%;">
+                    <div style="position: relative; ">
+                        <div id="semiOpaque" class="w3-card-4" style="height: 350px; position: absolute; top: 20px; left: 0; bottom: 20px; right: 0; background-color: white; opacity: 0.2"></div>
+                        <div id="" style="position: absolute; left: 15%; top: 0; right: 15%; bottom: 0; background-color: white">
+                            <img class="ss2" src="gear_photo/1.jpg" width="100%" height="auto">
+                            <div style="width: 100%; background-color: #494949; text-align: center; padding: 10px">
+                                Двухсторонняя стойка въезда-выезда на жетонах
+                            </div>
+                        </div>
+                        <div class="w3-button w3-black" onclick="plusDivs2(-1)" style="position: absolute; left: 0; top: 180px">&#10094;</div>
+                        <div class="w3-button w3-black" onclick="plusDivs2(1)" style="position: absolute; right: 0; top: 180px">&#10095;</div>
+                    </div>
+                </div>
+                <div class="w3-cell w3-container" style="width: 50%;">
+                    <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">Двухсторонняя стойка въезда-выезда на жетонах</h2>
+                    <p style="font-family: AvenirNext-Regular; font-size: 24px;">Двухсторонняя стойка одновременно выполняет функции въездной и выездной стойки. Такая конструкция исключает необходимость ... <a href="#" class="accent-coloor w3-right">далее</a>
+                </div>
+            </div>
+        </div>
 		
 		<?php include "$root/common/footer.html"; ?>
 	</body>

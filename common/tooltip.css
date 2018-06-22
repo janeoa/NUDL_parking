@@ -1,6 +1,5 @@
 /* Tooltip container */
 .tooltip {
-    position: relative;
 }
 
 /* Tooltip text */
@@ -29,7 +28,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent  rgba(0,0,0,0.2) transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.2) transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
