@@ -159,7 +159,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		
         <?php
         include ("$root/four.html");
-        //include ("$root/common/footer.html");
+        include ("$root/common/footer.html");
         ?>
 
 	</body>

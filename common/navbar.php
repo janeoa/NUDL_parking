@@ -1,4 +1,9 @@
 <style>
+
+    #nav{
+        padding: 67px 3% 67px 25%;
+    }
+
     .at-under{
         border-color: rgba(0,0,0,0) !important;
     }
@@ -8,8 +13,13 @@
         transition: background-color 200ms linear, padding 200ms linear;
     }
     @media only screen and (max-width: 400px){
-        #nav{
+        .navbar-fixed-top{
             padding: 20px 10% 67px 25% !important;
+        }
+        .navbar-fixed-top.scrolled {
+            background-color: black !important;
+            padding: 10px 5% 10px 5% !important;
+            transition: background-color 200ms linear, padding 200ms linear;
         }
         #logo{
             top: 20px !important;
@@ -17,7 +27,7 @@
     }
 </style>
 
-<div id="nav" class="w3-top navbar-fixed-top" style="padding: 67px 3% 67px 25%;"  >
+<div id="nav" class="w3-top navbar-fixed-top" style=""  >
 	<div class="w3-row">
         <div class="w3-col w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">MOAR <i class="fas fa-caret-square-down"></i></div>
 		<div class="w3-hide-small">
