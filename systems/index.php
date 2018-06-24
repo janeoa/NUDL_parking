@@ -6,7 +6,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 	<head>
 		<meta charset="utf-8"/>
 		<title>Системы</title>
-		<?php $dir = "systems"; ?>
+		<?php $dir = "systems"; include "$root/common/libs.html";?>
         <meta name="author" content="Asset Malik"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="/common/w3.css"/>
@@ -67,6 +67,21 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 .tooltiptext{
                     zoom: 2;
                 }
+            }
+
+            ul.dashed{
+                list-style: none;
+                padding-left: 0;
+            }
+
+            ul.dashed > li {
+                margin-left: 20px;
+            }
+
+            /* Prevent nested li's from getting messed up */
+            ul.dashed > li::before {
+                content: "— ";
+                margin-left: -15px;
             }
 		</style>
 
@@ -258,7 +273,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 <p>Автоматизированные парковочные системы — программно-аппаратный комплекс для повышения контроля, безопасности и комфорта парковочного пространства. Он находит широкое применение на следующих объектах: торгово-развлекательные центры, бизнес-центры, промышленные предприятия, гостиницы, зоны отдыха, парки и другие охраняемые территории.</p>
                 <p>На оборудование RPS инсталлируется специальное программное обеспечение. Система не только легко устанавливается на любом объекте, но и максимально эффективно настраивается под решение конкретных задач. Это позволяет организовать эффективное управление паркингом.</p>
                 <p>Основными элементами автоматизированной парковочной системы являются:</p>
-                <ul>
+                <ul class="dashed">
                     <li>	стойки въезда;</li>
                     <li>	стойки выезда;</li>
                     <li>	шлагбаум;</li>

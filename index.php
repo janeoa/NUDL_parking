@@ -6,7 +6,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 	<head>
 		<meta charset="utf-8"/>
 		<title>Parking. Главная</title>
-		<?php $dir = "main"; ?>
+		<?php $dir = "main"; include "$root/common/libs.html";?>
         <meta name="author" content="Asset Malik"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="/common/w3.css"/>

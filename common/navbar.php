@@ -40,9 +40,9 @@
 			<div class="w3-col at-nav" style="width: 24% !important">
 				<a href="/gear/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="gear") echo 'border-color: #efa426 !important; '; ?>">Оборудование</span></a>
 			</div>
-			<div class="w3-col at-nav">
+			<!--div class="w3-col at-nav">
 				<a href="/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="contacts") echo 'border-color: #efa426 !important; '; ?>">Контакты</span></a>
-			</div>
+			</div-->
 		</div>
 		<div class="w3-rest w3-right" style="text-align: right; padding: 0 3px;">
 			<span><i class="fas fa-phone" style="transform: rotate(90deg); color: #f5a623"></i></span>
@@ -65,11 +65,11 @@
                 <span class="at-under" style="<?php if($dir=="gear") echo 'border-color: #efa426 !important; '; ?>">Оборудование</span>
             </div>
         </a>
-        <a href="/" style="text-decoration: none">
+        <!--a href="/" style="text-decoration: none">
             <div class="w3-bar-item w3-button">
                 <span class="at-under" style="<?php if($dir=="contacts") echo 'border-color: #efa426 !important; '; ?>">Контакты</span>
             </div>
-        </a>
+        </a-->
     </div>
 </div>
 
