@@ -12,7 +12,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<link rel="stylesheet" href="/common/w3.css"/>
         <script src="/common/jquery.min.js"></script>
         <script src="/common/jquery-ui.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
 		<link rel="stylesheet" href="/common/main.css"/>
         <link rel="stylesheet" href="/common/tooltip.css">
 		

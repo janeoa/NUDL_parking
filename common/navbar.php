@@ -29,7 +29,7 @@
 
 <div id="nav" class="w3-top navbar-fixed-top" style=""  >
 	<div class="w3-row">
-        <div class="w3-col w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">MOAR <i class="fas fa-caret-square-down"></i></div>
+        <div class="w3-col w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">Меню <i class="fas fa-caret-square-down"></i></div>
 		<div class="w3-hide-small">
 			<div class="w3-col at-nav">
 				<a href="/" style="text-decoration: none;"><span class="at-under" style="<?php if($dir=="main") echo 'border-color: #efa426 !important; '; ?>">Главная</span></a>

@@ -9,7 +9,7 @@
 html, body{
 	height: 100%;
 	color: white;
-    font-family: AvenirNext-Regular;
+    font-family: AvenirNext-Regular, 'Avenir Next';
 }
 .at-circle{
 	width: 161px;
