@@ -29,7 +29,6 @@
 
 <div id="nav" class="w3-top navbar-fixed-top" style=""  >
 	<div class="w3-row">
-        <div class="w3-col w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">Меню <i class="fas fa-caret-square-down"></i></div>
 		<div class="w3-hide-small">
 			<div class="w3-col at-nav">
 				<a href="/" style="text-decoration: none;"><span class="at-under" style="<?php if($dir=="main") echo 'border-color: #efa426 !important; '; ?>">Главная</span></a>
@@ -44,10 +43,11 @@
 				<a href="/" style="text-decoration: none"><span class="at-under" style="<?php if($dir=="contacts") echo 'border-color: #efa426 !important; '; ?>">Контакты</span></a>
 			</div-->
 		</div>
-		<div class="w3-rest w3-right" style="text-align: right; padding: 0 3px;">
+		<div class="w3-rest w3-hide-small w3-right" style="text-align: right; padding: 0 3px;">
 			<span><i class="fas fa-phone" style="transform: rotate(90deg); color: #f5a623"></i></span>
 			862-902-2352
 		</div>
+        <div class="w3-col w3-right w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">Меню <i class="fas fa-caret-square-down"></i></div>
 	</div>
     <div id="Moar" class="w3-bar-block w3-hide-large w3-hide-medium" style="width: 80%; background-color: rgba(0,0,0,0.2)">
         <a href="/" style="text-decoration: none;">
