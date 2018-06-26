@@ -67,6 +67,20 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 .tooltiptext{
                     zoom: 2;
                 }
+                #workingS{
+                    zoom: 0.4;
+                }
+                h1{
+                    font-size: 24px!important;
+                    font-weight: bold!important;
+                }
+                h2{
+                    font-size: 20px!important;
+                    font-weight: bold!important;
+                }
+                .bene-tooltip{
+                    zoom: 2;
+                }
             }
 
             ul.dashed{
@@ -91,14 +105,10 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<?php
         include "$root/common/navbar.php";
         ?>
-		
-		<div id="logo" style="margin-top:67px; margin-left: 10%">
-			LOGO
-		</div>
-		
-		<div class="w3-container" style="text-align: center" id="first">
-			<h1 class="accent-coloor" style="max-width: 945px; font-family: AvenirNext-Bold; font-size: 36px; margin: 20% auto 40px auto;">АВТОМАТИЗИРОВАННАЯ СИСТЕМА УПРАВЛЕНИЯ ПЛАТНОЙ ПАРКОВКОЙ</h1>
-			<p style="font-size: 24px; font-family: AvenirNext-MediumItalic; max-width: 817px; margin: 0 auto 180px auto">Автоматизирует контроль над въездом и выездом машин на стоянку и процесс оплаты использования парковочного пространства.</p>
+
+		<div class="w3-container" style="text-align: center; height: 100%" id="first">
+			<h1 class="accent-coloor" style="max-width: 945px; font-family: AvenirNext-Bold; font-size: 36px; margin: 15% auto 40px auto;">АВТОМАТИЗИРОВАННАЯ СИСТЕМА УПРАВЛЕНИЯ ПЛАТНОЙ ПАРКОВКОЙ</h1>
+			<p style="font-size: 24px; font-family: AvenirNext-MediumItalic; max-width: 817px; margin: 0 auto 0 auto">Автоматизирует контроль над въездом и выездом машин на стоянку и процесс оплаты использования парковочного пространства.</p>
 		</div>
 
         <div class="w3-container accent-coloor" style="text-align: center; margin-bottom: 200px" id="why">
@@ -268,7 +278,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         <div class="w3-container" id="otherInfo">
             <h2 class="at-bold">дополнительная информация</h2>
 
-            <div class="w3-container w3-white w3-round" style="margin: 10%; padding: 4%;">
+            <div class="w3-container w3-white w3-round" style="margin: auto 10%; padding: 4%;">
                 <h2 style="font-weight: bolder">АВТОМАТИЗИРОВАННЫЕ ПАРКОВОЧНЫЕ СИСТЕМЫ — ОПТИМАЛЬНОЕ УПРАВЛЕНИЕ ПАРКИНГОМ</h2>
                 <p>Автоматизированные парковочные системы — программно-аппаратный комплекс для повышения контроля, безопасности и комфорта парковочного пространства. Он находит широкое применение на следующих объектах: торгово-развлекательные центры, бизнес-центры, промышленные предприятия, гостиницы, зоны отдыха, парки и другие охраняемые территории.</p>
                 <p>На оборудование RPS инсталлируется специальное программное обеспечение. Система не только легко устанавливается на любом объекте, но и максимально эффективно настраивается под решение конкретных задач. Это позволяет организовать эффективное управление паркингом.</p>

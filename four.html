@@ -1,41 +1,106 @@
-<div style="margin: 50px auto" id="four">
+<div class="w3-white" style="margin: auto; padding: 50px 0" id="four">
     <h2 style="color: black; text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">НАШИ ПРОЕКТЫ</span></h2>
-    <div id="slidesOfFour" style="background-color: #f5a623; width: 90%; max-width: 1000px; margin: auto" class="w3-row">
-        <div class="w3-half w3-mobile" style="height: 100%; padding-top: 50px; color: white">
-            <h3 id="titleOfFour" style="text-transform: uppercase ;text-indent: 68px; color: #333333; font-family: AvenirNext-Medium; font-size: 2vw;"></h3>
+    <div id="slidesOfFour" class="w3-cell-row w3-hide-small" style="background-color: #f5a623; width: 90%; max-width: 1000px; margin: auto" >
+        <div class="w3-cell w3-cell-middle" style="height: 100%; color: white; width: 50%">
+            <h3 id="titleOfFour" class="titleOfFour" style="text-transform: uppercase ;text-indent: 68px; color: #333333; font-family: AvenirNext-Medium; font-size: 2vw;"></h3>
             <div style="padding: 0px 53px 0px 28px; font-family: AvenirNext-Regular; font-size: 1.8vw;">
-                <ul id="listOfFour">
+                <ul id="listOfFour" class="listOfFour">
 
                 </ul>
             </div>
         </div>
-        <div id="thePickOfFour" class="w3-half w3-mobile" style="height: 100%;">
-            <img src="img/four.jpg" height="auto" width="100%"/>
+        <div id="thePickOfFour" class="w3-cell" style="height: 100%; width: 50%">
+            <img class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
         </div>
     </div>
+
+    <div id="mobSlidesOfFour" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="w3-hide-medium w3-hide-large">
+        <div class="w3-display-container" style="width: 90%; margin: auto;text-shadow: 2px 2px 8px black;">
+            <img id="imageMobFour" class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase"></div>
+            <div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%;"></div>
+        </div>
+
+    </div>
+
+    <div id="dotsOfFour" class="w3-cell-row" style="width: 180px; margin: auto; color: black; text-align: center; font-size: 28px; margin-top: 20px">
+    </div>
 </div>
+
 
 <script>
     var contentOfFour = {
         headinds:[
-            "ТОРГОВЫЕ И БИЗНЕС ЦЕНТРЫ"
+            "ТОРГОВЫЕ И БИЗНЕС ЦЕНТРЫ",
+            "аэропорт",
+            "гостиницы",
+            "жилые комплексы"
         ],
         lists:[
             [
                 "Организация работы собственника с арендатором;",
                 "Организация работы арендаторов с гостями;",
                 "Комфортное использование парковочного пространства посетителями бизнес-центра или торгового центра"
+            ],
+            [
+                "Организация работы УК с жильцами;",
+                "Организация работы с гостями жильцов;",
+                "Различные способы въезда/выезда и оплаты парковки. Личный кабинет для генерации приглашений гостям."
+            ],
+            [
+                "Организация работы с посетителями гостинницы;",
+                "Генерация приглашений для гостей;",
+                "Въезд и выезд по распознаванию номера",
+                "Создание системы лояльности",
+                "Работа с постоянными посетителями"
+            ],
+            [
+                "Организация работы с посетителями паркинга;",
+                "Конструктор тарифных сеток и планов;",
+                "Статистика по загруженности паркинга в любой момент времени;",
+                "Отчётность по прибыли;",
+                "Отказоусточивость системы к высоким нагрузкам."
             ]
+        ],
+        images:[
+            "four.jpg",
+            "аэропорт.jpg",
+            "гостиницы.jpg",
+            "жилые комплексы.png"
         ]
     }
     $(document).ready(function () {
         fillFour(0);
     });
+    function blurDeMob(state) {
+        if(state){$("#imageMobFour").css("filter","blur(5px)")}
+        else{$("#imageMobFour").css("filter","")}
+    }
+
+    function chosen(id) {
+        return '<div class="w3-cell cellOfFour" onclick="fillFour('+id+')" ><svg width="28" height="28">\n' +
+        '   <circle cx="14" cy="14" r="12" stroke="rgb(97,97,97)" stroke-width="2" fill="white" />\n' +
+        '   <circle cx="14" cy="14" r="4" stroke="rgb(97,97,97)" stroke-width="3" fill="rgb(97,97,97)" />\n' +
+        '</svg></div> ';
+    }
+    function option(id) {
+        return '<div class="w3-cell cellOfFour" onclick="fillFour('+id+')" ><svg width="28" height="28">\n' +
+        '   <circle cx="14" cy="14" r="12" stroke="white" stroke-width="2" fill="white" />\n' +
+        '   <circle cx="14" cy="14" r="4" stroke="rgb(155,155,155)" stroke-width="3" fill="rgb(155,155,155)" />\n' +
+        '</svg></div>';
+    }
 
     function fillFour(id) {
-        $("#titleOfFour").text(contentOfFour.headinds[id]);
+        $(".titleOfFour").text(contentOfFour.headinds[id]);
+        $(".listOfFour").text("");
+        $(".imgOfFour").attr("src", "/img/"+contentOfFour.images[id]);
         for (var i=0; i<contentOfFour.lists[id].length; i++){
-            $("#listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
+            $(".listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
+        }
+        $("#dotsOfFour").html("");
+        for(var i=0; i<4; i++){
+            if(i==id ) $("#dotsOfFour").append(chosen(i));
+            else $("#dotsOfFour").append(option(i));
         }
     }
 </script>
@@ -45,5 +110,19 @@
         #slidesOfFour{
             width: 80% !important;
         }
+    }
+    .cellOfFour{
+        cursor: pointer;
+    }
+    @media screen and (min-width: 1200px) {
+        #listOfFour {
+            font-size: 20px !important;
+        }
+        #titleOfFour{
+            font-size: 26px!important;
+        }
+    }
+    #imageMobFour:hover{
+
     }
 </style>

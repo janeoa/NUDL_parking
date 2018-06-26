@@ -14,7 +14,8 @@ $title = array(
     'zjeton' => 'ДВУХСТОРОННЯЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА НА ЖЕТОНАХ',
     'IO' => 'СТОЙКА ВЪЕЗДА-ВЫЕЗДА',
     'IOzjeton' => 'СТОЙКА ВЪЕЗДА-ВЫЕЗДА НА ЖЕТОНАХ',
-    'doubleIO' => 'ДВУХУРОВНЕВАЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА'
+    'doubleIO' => 'ДВУХУРОВНЕВАЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА',
+    "parkomats" => 'ПАРКОМАТЫ'
 );
 
 $topText = array(
@@ -25,22 +26,25 @@ $topText = array(
             <p>Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать систему к любым бизнес моделям, а продуманный до мелочей дизайн обеспечит максимально комфортное использование.</p>',
     'IOzjeton' => '<p>Обеспечивают доступ клиента на парковку, управляя периферийными устройствами.</p> 
             <p>Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать систему к любым бизнес моделям, а продуманный до мелочей дизайн обеспечит максимально комфортное использование.</p>',
-    'doubleIO' => 'Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым, так и грузовым автомобилям.'
+    'doubleIO' => 'Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым, так и грузовым автомобилям.',
+    "parkomats" => "<p>Компания RPS специализируется на проектировании, производстве, а также установке и обслуживании паркоматов собственной марки. У нас вы можете купить надежное оборудование по выгодной стоимости. На счету нашей команды — десятки реализованных проектов по обустройству парковок в разных городах России. Среди них — МДЦ «Москва-Сити», ТРЦ «Ривьера», ТРК «Небо», ТРЦ «Рига-Молл», аэропорт Череповца, гостиница Marriott Hotel, оптово-распределительный центр «Радумля» и др.</p>
+                    <p>Терминалы полностью адаптированы к эксплуатации в погодных условиях России. Дополнительным подтверждением их надёжности служат декларации о соответствии техническим регламентам и стандартам Таможенного союза.t</p>
+                    <p>В портфолио компании RPS представлены многочисленные кейсы — готовые проектно-технические решения для разных объектов. Реализованные проекты расположены в Москве, Шанхае, Череповце, Краснодаре, Ташкенте, Калининграде, Нижнем Новгороде и других городах в России и за рубежом.</p>"
 );
 
 $about = array(
     "light" => '<h2>БАЗОВЫЙ ФУНКЦИОНАЛ</h2>
                     <ul class="" style="list-style: none; padding-left: 0;">
-                        <li>−	Прием платежей банкнотами. Многоуровневая проверка подленности купюр;</li> 
-                        <li>−	Работа с разовыми и постоянными клиентами. Оплата абонементов; </li>
-                        <li>−	Расчет и выдача сдачи купюрами;</li>
-                        <li>−	Печать фискальных чеков;</li>
-                        <li>−	Голосовая связь с оператором;</li>
-                        <li>−	Диспенсер для выдачи штрафных карт;</li>
-                        <li>−	Многоязычный интерфейс с возможностью дополнительной локализации;</li>
-                        <li>−	IP видео камера с широкоугольным объективом Fisheye; </li>
-                        <li>−	UPS для работы при отключении питания;</li>
-                        <li>−	Климат контроль для работы в холодное время года;</li>
+                        <li>	Прием платежей банкнотами. Многоуровневая проверка подленности купюр;</li> 
+                        <li>	Работа с разовыми и постоянными клиентами. Оплата абонементов; </li>
+                        <li>	Расчет и выдача сдачи купюрами;</li>
+                        <li>	Печать фискальных чеков;</li>
+                        <li>	Голосовая связь с оператором;</li>
+                        <li>	Диспенсер для выдачи штрафных карт;</li>
+                        <li>	Многоязычный интерфейс с возможностью дополнительной локализации;</li>
+                        <li>	IP видео камера с широкоугольным объективом Fisheye; </li>
+                        <li>	UPS для работы при отключении питания;</li>
+                        <li>	Климат контроль для работы в холодное время года;</li>
                     </ul>',
     'standart' => '<h2>БАЗОВЫЙ ФУНКЦИОНАЛ</h2>
                 <ul><li>	Прием платежей банкнотами. Многоуровневая проверка подленности купюр;</li> 
@@ -224,7 +228,18 @@ $about = array(
             <li>Ключевая микромеханика от европейских производителей обеспечивает высокую надёжность работоспособности устройства;</li>
             <li>Цветной 7 дюймовый дисплей повышенной яркости;</li>
             <li>Подсветка рабочей зоны стойки упрощает использование ночью.</li>
-            </ul>'
+            </ul>',
+    'parkomats' => '<h2 class="accent-coloor">Установка паркомата — создание инфраструктуры XXI века</h2>
+                    <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
+                    <p>Установка такого оборудования для парковки — решение, выгодное для всех: владельцев объекта, его персонала и посетителей. Представленные в этом разделе терминалы обладают богатым набором опций. В зависимости от модификации паркоматы выполняют следующие функции:</p>
+                    <ul>
+                    	<li>Принимают платежи, обрабатывают банкноты и банковские карты — предоставляют пользователям выбор между наличными и безналичными формами оплаты;</li>
+                        <li>Генерируют отчётную документацию для последующего анализа и бухгалтерского учёта;</li>
+                        <li>Проверяют подлинность внесённых денежных средств;</li>
+                        <li>Передают данные в режиме реального времени по локальной сети;</li>
+                        <li>Отсчитывают и выдают сдачу;</li>
+                        <li>Интегрируются с другими элементами системы оплаты и исполнительными механизмами.</li>
+                    </ul>'
 );
 
 $photo = array(
@@ -305,7 +320,25 @@ $specs = array(
                 <tr><td>Класс защиты корпуса:</td><td>IP54</td></tr>
                 <tr><td>Используемые цвета:</td><td>RAL 7017, RAL 7044, RAL 9002, RAL 1016.</td></tr>
                 </table>',
-)
+    'parkomats' => '<p>Специалисты компании RPS готовы произвести расчёт окупаемости оборудования с учётом конкретных параметров вашего объекта. Такой математический подход помогает наиболее точно и достоверно оценить коммерческий потенциал проекта внедрения паркоматов. Автоматические кассы для оплаты парковки позволяют обойтись без большого числа работников. Цена содержания самих автоматов минимальна.</p> 
+                    <p>Компания RPS предлагает паркоматы серий Standard и Light. Все они имеют ряд общих функционально-технических достоинств:</p>
+                    <ul>
+                        <li>микромеханику от европейских изготовителей;</li>
+                        <li>современное ПО, автоматическое генерирование отложенных Z-отчётов, мониторинг заполняемости парковочного пространства и полученной прибыли для сокращения затрат на инкассацию;</li>
+                        <li>возможность бесконтактной оплаты парковки картами PayWave и PayPass, а также через сервисы Apple Pay и Android Pay;</li>
+                        <li>встроенный климат-контроль для стабильной работы 365 дней в году;</li>
+                        <li>сенсорный дисплей;</li>
+                        <li>антивандальную конструкцию, высокое качество сборки и устойчивость к механическим, температурным и атмосферным нагрузкам.</li>
+                    </ul>');
+$backgrounds = array(
+    "standart" => 'background-image: url("/gear/standart.png");',
+    "parkomats" => 'background-image: url("/gear/standart.png");',
+    "IO" => 'background-image: url("/gear/двухуровневая.png");',
+    "doubleIO" => 'background-image: url("/gear/двухуровневая стойка.png");',
+    "light" => 'background-image: url("/gear/двухуровневая стойка.png");',
+    "IOzjeton" => 'background-image: url("/gear/стойка.png");',
+    "zjeton" => 'background-image: url("/gear/жетоны.png");'
+);
 
 ?>
 <!DOCTYPE html>
@@ -322,10 +355,12 @@ $specs = array(
     <link rel="stylesheet" href="/common/main.css">
 
     <style>
-        html, body{
+        html{
             font-family: "AvenirNext-Regular";
+            <?php echo $backgrounds[$_GET["gear"]];?>
             background-position: center center;
             background-repeat: repeat-y;
+            background-size: cover;
         }
         ul {
             list-style: none;
@@ -336,24 +371,29 @@ $specs = array(
             margin-left: 20px;
         }
 
+        .at-under,#first,#moarButt{
+            text-shadow: 0 0 2px black;
+        }
+
         /* Prevent nested li's from getting messed up */
         ul > li::before {
             content: "— ";
             margin-left: -15px;
         }
+
+        .at-tabe{
+            width: 33%;
+        }
     </style>
 
 </head>
 
-<body class="w3-black">
+<body class="">
     <?php include "$root/common/navbar.php";?>
-    <div id="logo" style="margin-top:67px; margin-left: 10%">
-        LOGO
-    </div>
 
     <div class="w3-container" id="first">
-        <h1 class="" style="font-family: AvenirNext-Bold; font-size: 44px; text-align: center; margin-top: 10%;"><?php echo $title[$_GET["gear"]]; ?></h1>
-        <div style="max-width: 749px; width: 80%; min-width: 330px; margin: 60px auto;"><?php echo $topText[$_GET["gear"]]; ?></div>
+        <h1 class="" style="max-width: 749px; width: 70%; margin: 10% auto 0 auto; font-family: AvenirNext-Bold; font-size: 44px; text-align: center;"><?php echo $title[$_GET["gear"]]; ?></h1>
+        <div style="max-width: 749px; width: 70%; min-width: 330px; margin: 60px auto;"><?php echo $topText[$_GET["gear"]]; ?></div>
     </div>
 
     <style>
@@ -364,7 +404,7 @@ $specs = array(
 
         .at-tabe{
             padding: 6px;
-            font-size: 24px;
+            font-size: 2vw;
         }
 
         .at-tabo{
@@ -376,11 +416,18 @@ $specs = array(
         }
     </style>
 
-    <div class="w3-cell-row" style="background-color: #efa426; color: #525252; text-align: center">
+    <div class="w3-cell-row" style="background-color: #efa426; color: #525252; text-align: center; <?php if($_GET['gear']=='parkomats')echo 'display:none'; ?>">
         <div onclick="openCity('about');$('.seleced').removeClass('seleced'); $(this).addClass('seleced');" class="w3-button w3-cell w3-cell-middle at-tabe seleced">ПОДРОБНОЕ ОПИСАНИЕ</div>
         <div onclick="openCity('specs');$('.seleced').removeClass('seleced'); $(this).addClass('seleced');" class="w3-button w3-cell w3-cell-middle at-tabe ">ХАРАКТЕРИСТИКИ</div>
         <div onclick="openCity('docs'); $('.seleced').removeClass('seleced'); $(this).addClass('seleced'); " class="w3-button w3-cell w3-cell-middle at-tabe ">ДОКУМЕНТАЦИЯ</div>
     </div>
+
+    <div class="w3-cell-row" style="background-color: #efa426; color: #525252; text-align: center; <?php if($_GET['gear']!='parkomats')echo 'display:none'; ?>">
+        <div onclick="openCity('begin');$('.seleced').removeClass('seleced'); $(this).addClass('seleced');" class="w3-button w3-cell w3-cell-middle at-tabe seleced">УСТАНОВКА</div>
+        <div onclick="openCity('profit');$('.seleced').removeClass('seleced'); $(this).addClass('seleced');" class="w3-button w3-cell w3-cell-middle at-tabe ">КАКОЙ ДОХОД</div>
+        <div onclick="openCity('key'); $('.seleced').removeClass('seleced'); $(this).addClass('seleced'); " class="w3-button w3-cell w3-cell-middle at-tabe ">ПАРКОМАТЫ ПОД КЛЮЧ</div>
+    </div>
+
 
     <script>
         function openCity(cityName) {
@@ -393,13 +440,15 @@ $specs = array(
         }
     </script>
 
-    <div id="about" class="at-tabo" style="background-color: rgb(231,232,232); display: block">
+    <div id="about" class="at-tabo" style="background-color: rgb(231,232,232); <?php if($_GET['gear']!='parkomats')echo'display: block'; ?>">
         <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
 
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">
                 <div class="w3-cell w3-cell-top" style="width: 100%">
-                    <?php echo $about[$_GET["gear"]]; ?>
+                    <?php
+                    echo $about[$_GET["gear"]];
+                    ?>
                 </div>
                 <!--div class="w3-cell w3-cell-bottom" style="width: 30%">
                     <div style="width: 100%;"><img src="/gear/gear_photo/<?php echo $photo[$_GET["gear"]]; ?>" width="100%" height="auto"></div>
@@ -427,6 +476,49 @@ $specs = array(
             <div class="w3-cell-row">
                 <div class="w3-cell w3-cell-middle" style="width: 100%; height: 400px; text-align: center">
                     Документы отсутствуют
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="begin" class="at-tabo" style="background-color: rgb(231,232,232); <?php if($_GET['gear']=='parkomats')echo'display: block'; ?>">
+        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+            <div class="w3-cell-row">
+                <div class="w3-cell w3-cell-middle" style="width: 100%;">
+                    <?php echo $about["parkomats"] ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profit" class="at-tabo" style="background-color: rgb(231,232,232)">
+        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+            <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">Каким будет доход от установки паркомата?</h2>
+            <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
+            <div class="w3-cell-row">
+                <div class="w3-cell w3-cell-middle" style="width: 100%;">
+                    <?php echo $specs["parkomats"] ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="key" class="at-tabo" style="background-color: rgb(231,232,232)">
+        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+            <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">Паркоматы под ключ</h2>
+            <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
+            <div class="w3-cell-row">
+                <div class="w3-cell w3-cell-middle" style="width: 100%;">
+                    <p>Компания RPS занимается проектированием, поставкой, пусконаладкой, обслуживанием и модернизацией оборудования по всей России. Специалисты готовы рассчитать стоимость установки паркоматов для оплаты парковки и приблизительный срок окупаемости.</p>
+                    <p>В зависимости от выбранного варианта сотрудничества заказчикам паркоматов для парковок предоставляется:</p>
+                    <ul>
+                        <li>помощь с подбором оборудования и проектирование системы платной парковки в строгом соответствии с индивидуальным техническим заданием;</li>
+                        <li>монтаж, пусконаладка, ввод в эксплуатацию под ключ;</li>
+                        <li>гарантийное и послегарантийное обслуживание (обновление ПО, профилактика оборудования, замена неисправных модулей).</li>
+                    </ul>
+
                 </div>
             </div>
         </div>

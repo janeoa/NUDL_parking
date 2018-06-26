@@ -21,10 +21,15 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 pointer-events: none;
             }
 
-			#car2 {
-			    position: absolute; right: 30%; transform: rotate(27deg);top:48%; height: 20%;
-			}
-			
+			/*#car2 {*/
+			    /*position: absolute; right: 30%; transform: rotate(27deg);top:48%; height: 20%;*/
+			/*}*/
+            #car2 {
+                position: absolute; right: 10%; height: 20%; top:44%; transform: rotate(0);
+                animation-name: parkCar2;
+                animation-duration: 2s;
+                animation-timing-function: linear;
+            }
 			@media only screen and (max-width: 700px) {
 		    	#car2 {
 				    position: absolute; right: 10%; height: 20%; top:44%; transform: rotate(0);
@@ -56,7 +61,9 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			    40% {right: 22%; transform: rotate(24deg);top:47%;}
 			    100% {right: 10%; transform: rotate(0); top:44%;}
 			}
-
+            body{
+                background-image: url('img/first.jpg'); background-position: center center;
+            }
 		</style>
 
 	</head>
@@ -67,31 +74,19 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			include("common/navbar.php");
 		?>
 		
-		<div style="width: 100%; height: 100%; position: relative; background-image: url('img/first.jpg'); background-position: center center;" class="" id="first">
-			<div id="logo" class="" style="position: absolute; top: 67px; left: 10%;">
-				LOGO
-			</div>
+		<div style="width: 100%; height: 100%; position: relative; " class="" id="first">
 			<div style="position: absolute; top:30%; left: 10%; width: 60%">
-				<h1 id="firsth11" style="font-family: AvenirNext-Bold; font-size: 46px;">Паркинг нового поколения</h1>
-				<div class="w3-border-white w3-border-left" style="padding-left: 10px;">
+				<h1 id="firsth11" style="text-transform: uppercase; font-family: AvenirNext-Bold; font-size: 46px;">Паркинг нового поколения</h1>
+				<div class="w3-border-white w3-border-left w3-margin-bottom" style="padding-left: 10px;">
 					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
 				</div>
-                <div class="w3-row w3-hide-small" style="margin-top: 60px; text-align: center; font-size: 18px;">
-                    <div class="w3-col w3-display-container" style="cursor: pointer; border-radius: 8px 0px 0px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;">
-                        <div class="w3-display-middle">подробнее</div>
+
+                <br>
+                <a href="/systems" style="text-decoration: none;font-size: 18px;">
+                    <div class="w3-cell w3-cell-middle" style="cursor: pointer; text-align: center; border-radius: 8px; background-color: #f5a623; width: 300px;height: 40px;">
+                    Узнать подробнее
                     </div>
-                    <div class="w3-col w3-display-container" style="cursor: pointer; border-radius: 0px 8px 8px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
-                        <div class="w3-display-middle">Заказать</div>
-                    </div>
-                </div>
-                <div class="w3-hide-large w3-hide-medium" style="margin-top: 60px; text-align: center; font-size: 18px;">
-                    <div class="w3-cell w3-display-container w3-mobile" style="cursor: pointer; border-radius: 8px 8px 0px 0px; border: solid 1px #f5a623; width: 180px;height: 40px;">
-                        <div class="w3-display-middle">подробнее</div>
-                    </div>
-                    <div class="w3-cell w3-display-container w3-mobile" style="cursor: pointer; border-radius: 0px 0px 8px 8px; border: solid 1px #f5a623; width: 180px;height: 40px;background-color: #efa426;">
-                        <div class="w3-display-middle">Заказать</div>
-                    </div>
-                </div>
+                </a>
 			</div>
 
 			<div id="cars">
@@ -110,8 +105,8 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 				
 			</div>
 		</div>
-		
-		<div style="width: 80%; margin: 50px auto 20px auto; color: black;" id="second">
+
+		<div class="w3-white" style=" padding: 3% 10%;" id="second">
 			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">Почему мы?</span></h2>
 			<div class="w3-row" style="font-family: AvenirNext-DemiBold; font-size: 20px;">
 				<div class="w3-col m6 l3 at-wedo">
@@ -124,19 +119,19 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="fas fa-clipboard-check"></i></div>
 					</div>
-					<p>Производим оборудование и ПО</p>
+					<p>Доставляем по всему миру</p>
 				</div>
 				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="far fa-clock"></i></div>
 					</div>
-					<p>Производим оборудование и ПО</p>
+					<p>Оказываем полный комплекс услуг</p>
 				</div>
 				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="far fa-comment-dots"></i></div>
 					</div>
-					<p>Производим оборудование и ПО</p>
+					<p>Принимаем заявки в тех. поддержку 24/7</p>
 				</div>
 			</div>
 		</div>
@@ -153,7 +148,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 					</div>
 					<div class="w3-rest" style="padding-top: 44px">
 						<h2 style="font-size: 31px; font-family: AvenirNext-Regular; text-transform: uppercase"><span style="display: none;">Р</span>азрабатываем решения для автоматизации платных парковок по всей России и ближнему зарубежью
-							&nbsp;<img class="" src="img/arrow-right.png" height="31px" width="auto" alt="decorative arrow" style="cursor: pointer"/></h2>
+							&nbsp;<!--img class="" src="img/arrow-right.png" height="31px" width="auto" alt="decorative arrow" style="cursor: pointer"/--></h2>
 					</div>
 				</div>
 			</div>

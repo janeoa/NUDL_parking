@@ -1,7 +1,7 @@
 <style>
 
     #nav{
-        padding: 67px 3% 67px 25%;
+        padding: 67px 3% 67px 30%;
     }
 
     .at-under{
@@ -47,7 +47,7 @@
 			<span><i class="fas fa-phone" style="transform: rotate(90deg); color: #f5a623"></i></span>
 			862-902-2352
 		</div>
-        <div class="w3-col w3-right w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding:0;" onclick="showMoar()">Меню <i class="fas fa-caret-square-down"></i></div>
+        <div id="moarButt" class="w3-col w3-hide-large w3-hide-medium w3-button w3-round" style="width: 100px;  padding: 0 0 0 0;" onclick="showMoar()">Меню <i class="fas fa-caret-square-down"></i></div>
 	</div>
     <div id="Moar" class="w3-bar-block w3-hide-large w3-hide-medium" style="width: 80%; background-color: rgba(0,0,0,0.2)">
         <a href="/" style="text-decoration: none;">
@@ -98,3 +98,7 @@
         $("#Moar").slideToggle("medium");
     }
 </script>
+
+<div id="logo" style="margin-top:56px; margin-left: 10%">
+    <img src="/img/logo.png" width="100px" height="auto" />
+</div>
