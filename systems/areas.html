@@ -1,0 +1,143 @@
+<div class="" style="margin: auto; padding: 50px 0" id="four">
+
+    <div id="slidesOfFour" class="w3-cell-row w3-hide-small" style="background-color: #f5a623; width: 90%; max-width: 1000px; margin: auto" >
+        <div class="w3-cell w3-cell-middle" style="height: 100%; color: white; width: 50%">
+            <h3 id="titleOfFour" class="titleOfFour" style="text-transform: uppercase ;text-indent: 68px; color: #333333; font-family: AvenirNext-Medium; font-size: 1.7vw;"></h3>
+            <div style="padding: 0px 53px 0px 28px; font-family: AvenirNext-Regular; font-size: 1vw !important;">
+                <ul id="listOfFour" class="listOfFour dashed">
+
+                </ul>
+            </div>
+        </div>
+        <div id="thePickOfFour" class="w3-cell" style="height: 100%; width: 50%">
+            <img class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+        </div>
+    </div>
+
+    <div id="mobSlidesOfFour" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="w3-hide-medium w3-hide-large">
+        <div class="w3-display-container" style="width: 90%; margin: auto;text-shadow: 2px 2px 8px black;">
+            <img id="imageMobFour" class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase"></div>
+            <div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%;"></div>
+        </div>
+
+    </div>
+
+    <div id="dotsOfFour" class="w3-cell-row" style="width: 180px; margin: auto; color: black; text-align: center; font-size: 28px; margin-top: 20px">
+    </div>
+</div>
+
+
+<script>
+    var contentOfFour = {
+        headinds:[
+            "БИЗНЕС-ЦЕНТРЫ",
+            "СПОРТИВНЫЕ И ВЫСТАВОЧНЫЕ КОМПЛЕКСЫ",
+            "ТОРГОВЫЕ И РАЗВЛЕКАТЕЛЬНЫЕ КОМПЛЕКСЫ",
+            "ОТЕЛИ",
+            "АЭРОПОРТЫ И ВОКЗАЛЫ",
+            "ПАРКОВКИ ЖИЛЫХ КОМПЛЕКСОВ",
+
+        ],
+        lists:[
+            [
+                "Личный кабинет арендатора позволяет генерировать приглашения и отправлять их гостям. Таким образом арендатор может оплачивать парковочное время своих гостей безналичным расчетом по результатам календарного месяца.",
+                "Неограниченные возможности по работе с абонементами. Авансовые платежи. Возможность создания нескольких типов абонемента для выбора клиентом на (1, 3, 6 месяцев по разной стоимости)",
+                "Превосходный дизайн оборудования подойдет объекту любого класса."
+            ],
+            [
+                "Высокая пропускная способность оборудования позволяет эффективно обрабатывать высокие пиковые нагрузки, возникающие при проведение мероприятий. (1 проезд занимает менее 5 секунд)",
+                "Сканеры штрихкода, установленные на всех устройствах системы, позволяют идентифицировать пользователей и либо назначать им особый тариф, либо предоставлять скидку. (Идентификатором может также служить штрих код на проданном билете",
+                "Исключительная надежность исполняющих узлов от европейских и японских производителей (диспенсеры карт, купюр, купюроприемники и пр.) обеспечивают бесперебойную работу оборудования в режиме 24/7 в течение многих лет"
+
+            ],
+            [
+                "Создание программ лояльности для постоянных клиентов: уменьшение стоимости пользования парковкой после достижения определенного парковочного времени или количества въездов на парковку.",
+                "Возможность предоставления арендаторами скидок для посетителей торгового центра (например, в случае покупки",
+                "Выдача на кассе штрафных карт со штрафным тарифным планом для разовых клиентов, потерявших карту, выданную при въезде."
+            ],
+            [
+                "Гостевые карты на установленный срок: выездной терминал системы автоматизации платной парковки забирает карту по истечению заданного срока.",
+                "Работа с гостями при помощи штрих-кодов.",
+                "Распознавание номерных знаков."
+            ],
+            [
+                "Исключительная надежность исполняющих узлов от европейских и японских производителей диспенсеры карт, купюр, купюроприемники и пр., что обеспечивает бесперебойную работу оборудования в режиме 24/7 в течение многих лет.",
+                "Широчайшие возможности тарифного калькулятора позволяют создавать абсолютно любые тарифные планы с учетом времени суток, дней недели, праздничных дней, вводить любые ограничения и т. д.",
+                "Зонирование парковочного пространства при помощи стоек постоянного клиента позволяет эффективно управлять транспортными потоками внутри парковки (например, создавая выжимающие тарифы"
+            ],
+            [
+                "Неограниченные возможности по работе с абонементами. Авансовые платежи. Возможность создания нескольких типов абонемента для выбора клиентом (на 1, 3, 6 месяцев по разной стоимости",
+                "Возможность разбивки парковочного пространства на зоны с ограничением прав доступа для разных групп клиентов."
+            ]
+        ],
+        images:[
+            "бизнесцентры.jpg",
+            "sport.jpg",
+            "трц.jpeg",
+            "отель.jpg",
+            "вокзалы.jpg",
+            "жилые.jpeg"
+        ]
+    }
+    $(document).ready(function () {
+        fillFour(0);
+    });
+    function blurDeMob(state) {
+        if(state){$("#imageMobFour").css("filter","blur(5px)")}
+        else{$("#imageMobFour").css("filter","")}
+    }
+
+    function chosen(id) {
+        return '<div class="w3-cell cellOfFour" onclick="fillFour('+id+')" ><svg width="28" height="28">\n' +
+            '   <circle cx="14" cy="14" r="12" stroke="rgb(97,97,97)" stroke-width="2" fill="rgba(155,155,155,0)" />\n' +
+            '   <circle cx="14" cy="14" r="4" stroke="rgb(97,97,97)" stroke-width="3" fill="rgb(97,97,97)" />\n' +
+            '</svg></div> ';
+    }
+    function option(id) {
+        return '<div class="w3-cell cellOfFour" onclick="fillFour('+id+')" ><svg width="28" height="28">\n' +
+            '   <circle cx="14" cy="14" r="12" stroke="rgba(155,155,155,0)" stroke-width="2" fill="rgba(155,155,155,0)" />\n' +
+            '   <circle cx="14" cy="14" r="4" stroke="rgb(155,155,155)" stroke-width="3" fill="rgb(155,155,155)" />\n' +
+            '</svg></div>';
+    }
+
+    function fillFour(id) {
+        $(".titleOfFour").text(contentOfFour.headinds[id]);
+        $(".listOfFour").text("");
+        $(".imgOfFour").fadeOut("fast",function () {
+            $(".imgOfFour").attr("src", "/systems/"+contentOfFour.images[id]);
+        });
+
+        $(".imgOfFour").fadeIn('fast');
+        for (var i=0; i<contentOfFour.lists[id].length; i++){
+            $(".listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
+        }
+        $("#dotsOfFour").html("");
+        for(var i=0; i<6; i++){
+            if(i==id ) $("#dotsOfFour").append(chosen(i));
+            else $("#dotsOfFour").append(option(i));
+        }
+    }
+</script>
+
+<style>
+    @media only screen and (max-width: 601px){
+        #slidesOfFour{
+            width: 80% !important;
+        }
+    }
+    .cellOfFour{
+        cursor: pointer;
+    }
+    @media screen and (min-width: 1200px) {
+        #listOfFour {
+            font-size: 14px !important;
+        }
+        #titleOfFour{
+            font-size: 20px!important;
+        }
+    }
+    #imageMobFour:hover{
+
+    }
+</style>
