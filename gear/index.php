@@ -14,19 +14,6 @@
         <link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
         <link rel="stylesheet" href="/common/main.css">
 
-        <style>
-            html{
-                font-family: "AvenirNext-Regular";
-                background-image: url('bg.png');
-                background-position: center center;
-                background-repeat: repeat-y;
-                background-attachment: fixed;
-            }
-            .middleImg{
-                margin: 0;
-            }
-        </style>
-
 	</head>
 	
 	<body>
@@ -40,6 +27,15 @@
 		</div>
 		
 		<style>
+
+            html{
+                font-family: "AvenirNext-Regular";
+                background-image: url('bg.png');
+                background-position: center center;
+                background-repeat: repeat-y;
+                background-attachment: fixed;
+            }
+
 			.at-tab-butt{
 				padding: 13px 3px;
 				text-align: center;
@@ -63,13 +59,6 @@
                 border-color: #efa426;
                 border-width: 2px;
             }
-			
-			/*.at-tab-butt:hover{*/
-				/*padding: 10px 0;*/
-				/*border-style: solid;*/
-				/*border-color: #efa426;*/
-				/*border-width: 3px;*/
-			/*}*/
 
             .kassa{
                 display: none;
@@ -85,6 +74,11 @@
             @media screen and (max-width: 600px){
                 .theOps, #pads{
                     width: 100%!important;
+                }
+            }
+            @media screen and (max-width: 993px){
+                .at-tab-butt2{
+                    width: 50%!important;
                 }
             }
 
@@ -199,27 +193,40 @@
                 array("IOzjeton.png"),
                 array("doubleIO.png"),
 
-            );
+            );?>
 
+            <?php
             for($i=0; $i<count($ids);$i++){
                 if($i==2){
                     echo
                     '<div style=" height: 100px; width: 1px;"></div>
-                    <div class="theOps w3-cell-row" style=" margin: 80px auto; font-size: 1.4vw;">
+                    <div class="theOps w3-cell-row w3-hide-medium w3-hide-small" style=" margin: 80px auto; /*font-size: 1.4vw;*/">
                         <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen2"onclick="openStoika(\'zjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухсторонняя стойка въезда-выезда на жетонах</div>
                         <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда</div>
                         <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IOzjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда на жетонах</div>
                         <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'doubleIO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухуровневая стойка въезда-выезда</div>
-                    </div>';
+                    </div>
+                    <div class="theOps  w3-hide-large" style=" margin: 80px auto; /*font-size: 1.4vw;*/">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen2"onclick="openStoika(\'zjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухсторонняя стойка въезда-выезда на жетонах</div>
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда</div>
+                        </div>
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IOzjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда на жетонах</div>
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'doubleIO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухуровневая стойка въезда-выезда</div>
+                        </div>
+                    </div>
+                    
+                    ';
                 }
                 //if($i>1) echo '<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: auto">';
                 echo'
                 <div  id="'.$ids[$i][0].'" class="'.$ids[$i][1].' w3-cell-row" style="width: 100%; margin-top: 60px;">
-				<div class="w3-cell w3-cell-middle w3-padding w3-hide-small">
+				<div class="w3-cell w3-cell-middle w3-padding w3-hide-small w3-hide-medium">
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">'.$content[$i][0].'</h2>
                     <p style="font-family: AvenirNext-Regular; font-size: 24px;">'.$content[$i][1].'</p>
 				</div>
-				<div class="w3-cell w3-cell-middle w3-hide-small" style="width: 50%">
+				<div class="w3-cell w3-cell-middle w3-hide-small w3-hide-medium" style="width: 50%">
 					<div class="w3-display-container">
 						<div class="" style="padding-top: 90%; width: 100%;">
 						</div>
@@ -256,14 +263,18 @@
                     echo '
 					</div>
 				</div>
-                <div id="" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="imageMobFour w3-hide-medium w3-hide-large">
+                <div id="" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="imageMobFour w3-hide-large">
                     <div class="w3-display-container" style="width: 100%; margin: auto;text-shadow: 2px 2px 8px black;">
                         <img class="'.$ids[$i][0].'2 slidePic" src="gear_photo/'.$images[$i][0].'" width="100%" height="auto">';
                     if(count($images[$i])>1) echo
                         '<img class="'.$ids[$i][0].'2 slidePic" src="gear_photo/'.$images[$i][1].'" width="100%" height="auto">';
+//                    echo'
+//                        <div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase; z-index: 4!important; pointer-events: none">'.$content[$i][0].'</div>
+//                        <div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%; z-index: 4!important;  pointer-events: none">'.$content[$i][1].'</div>';
                     echo'
-                        <div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase; z-index: 4!important; pointer-events: none">'.$content[$i][0].'</div>
-                        <div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%; z-index: 4!important;  pointer-events: none">'.$content[$i][1].'</div>';
+                        <!--div id="white" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*40%*/; height: 100%; background-color: white; opacity: 1"></div>
+                        <div id="orang" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*95%*/; height: 100%; background-color: #efa426; opacity: 0.6"></div-->            
+                        <div class="w3-display-middle w3-display-hover sumOfFour" style="width: 75%; padding-bottom: 3%"><h2>'.$content[$i][0].'</h2>'.$content[$i][1].'</div>';
                     if(count($images[$i])>1) echo '
                         <div class="w3-display-left" style="width: 17.5%; height: 10%; cursor: pointer">
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
@@ -294,6 +305,17 @@
 
         </div>
 
+        <script>
+            function blurDeMob(state) {
+                if(state){
+                    $("#white").animate({width:"40%"});
+                    $("#orang").animate({width:"100%"});
+                }else{
+                    $("#white").animate({width:"0"});
+                    $("#orang").animate({width:"0"});
+                }
+            }
+        </script>
 
         <div style="height: 150px ; width: 1px;"></div>
 		<?php include "$root/common/footer.html"; ?>

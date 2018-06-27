@@ -17,8 +17,12 @@
     <div id="mobSlidesOfFour" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="w3-hide-medium w3-hide-large">
         <div class="w3-display-container" style="width: 90%; margin: auto;text-shadow: 2px 2px 8px black;">
             <img id="imageMobFour" class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
-            <div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase"></div>
-            <div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%;"></div>
+            <div id="white" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*40%*/; height: 100%; background-color: white; opacity: 1"></div>
+            <div id="orang" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*95%*/; height: 100%; background-color: #efa426; opacity: 0.6"></div>
+            <div class="w3-display-middle w3-display-hover sumOfFour" style="width: 90%; padding-bottom: 3%"></div>
+            <!--<div class="w3-display-topmiddle    titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase"></div>-->
+            <!--<div class="w3-display-bottommiddle listOfFour w3-display-hover" style="width: 90%;"></div>-->
+
         </div>
     </div>
 
@@ -82,9 +86,18 @@
     $(document).ready(function () {
         fillFour(0);
     });
+    // function blurDeMob(state) {
+    //     if(state){$("#imageMobFour").css("filter","blur(5px)")}
+    //     else{$("#imageMobFour").css("filter","")}
+    // }
     function blurDeMob(state) {
-        if(state){$("#imageMobFour").css("filter","blur(5px)")}
-        else{$("#imageMobFour").css("filter","")}
+        if(state){
+            $("#white").animate({width:"40%"});
+            $("#orang").animate({width:"95%"});
+        }else{
+            $("#white").animate({width:"0"});
+            $("#orang").animate({width:"0"});
+        }
     }
 
     function chosen(id) {
@@ -102,6 +115,7 @@
 
     function fillFour(id) {
         $(".titleOfFour").text(contentOfFour.headinds[id]);
+        $(".sumOfFour").html("<h4 style='text-transform: uppercase'>"+contentOfFour.headinds[id]+"</h4><ul>");
         $(".listOfFour").text("");
         $(".imgOfFour").fadeOut("fast",function () {
             $(".imgOfFour").attr("src", "/systems/"+contentOfFour.images[id]);
@@ -110,7 +124,8 @@
         $(".imgOfFour").fadeIn('fast');
         for (var i=0; i<contentOfFour.lists[id].length; i++){
             $(".listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
-        }
+            $(".sumOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
+        }$(".sumOfFour").append("</ul>");
         $("#dotsOfFour").html("");
         for(var i=0; i<6; i++){
             if(i==id ) $("#dotsOfFour").append(chosen(i));
