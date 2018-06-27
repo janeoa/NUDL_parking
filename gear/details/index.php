@@ -410,6 +410,13 @@ $backgrounds = array(
         .at-tabo{
             display: none;
         }
+        @media screen and (max-width: 600px){
+            .mobC{
+                width: 100% !important;
+                padding: 10px 3% !important;
+            }
+        }
+
 
         h2{
             style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;"
@@ -441,7 +448,7 @@ $backgrounds = array(
     </script>
 
     <div id="about" class="at-tabo" style="background-color: rgb(231,232,232); <?php if($_GET['gear']!='parkomats')echo'display: block'; ?>">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
 
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">
@@ -458,7 +465,7 @@ $backgrounds = array(
     </div>
 
     <div id="specs" class="at-tabo" style="background-color: rgb(231,232,232)">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
             <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ </h2>
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">
@@ -470,7 +477,7 @@ $backgrounds = array(
     </div>
 
     <div id="docs" class="at-tabo" style="background-color: rgb(231,232,232)">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
             <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">ДОКУМЕНТАЦИЯ</h2>
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">
@@ -482,7 +489,7 @@ $backgrounds = array(
     </div>
 
     <div id="begin" class="at-tabo" style="background-color: rgb(231,232,232); <?php if($_GET['gear']=='parkomats')echo'display: block'; ?>">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
             <div class="w3-cell-row">
                 <div class="w3-cell w3-cell-middle" style="width: 100%;">
                     <?php echo $about["parkomats"] ?>
@@ -492,7 +499,7 @@ $backgrounds = array(
     </div>
 
     <div id="profit" class="at-tabo" style="background-color: rgb(231,232,232)">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
             <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">Каким будет доход от установки паркомата?</h2>
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">
@@ -506,7 +513,7 @@ $backgrounds = array(
 
 
     <div id="key" class="at-tabo" style="background-color: rgb(231,232,232)">
-        <div style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
+        <div class="mobC" style="background-color: white; width: 80%; margin: auto; padding: 10px 12%; color: #505050">
             <h2 style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;">Паркоматы под ключ</h2>
             <div style="background-color: #efa426; width: 36px; height: 6px;"></div>
             <div class="w3-cell-row">

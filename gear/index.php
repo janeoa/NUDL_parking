@@ -87,6 +87,10 @@
                     width: 100%!important;
                 }
             }
+
+            a{
+                pointer-events: all;
+            }
 		</style>
 		
 		<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: 40px auto 0 auto">
