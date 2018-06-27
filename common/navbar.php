@@ -14,7 +14,7 @@
     }
     @media only screen and (max-width: 400px){
         .navbar-fixed-top{
-            padding: 20px 10% 67px 25% !important;
+            padding: 67px 10% 67px 40% !important;
         }
         .navbar-fixed-top.scrolled {
             background-color: black !important;

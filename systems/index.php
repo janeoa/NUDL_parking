@@ -28,7 +28,8 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			}
 
             body{
-                background-image: url("blurred.png");
+                background-color: rgba(0,0,0,0.8);
+                background-image: url("blurred.jpg");
                 background-repeat: repeat-y;
                 background-position: center center;
                 background-size: cover;
@@ -62,7 +63,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 
             @media screen and (max-width: 600px){
                 #why, #benefits-route{
-                    zoom: 0.4;
+                    zoom: 0.30;
                 }
                 .tooltiptext{
                     zoom: 2;
@@ -80,6 +81,9 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 }
                 .bene-tooltip{
                     zoom: 2;
+                }
+                #oIC{
+                    margin: 1px !important;
                 }
             }
 
@@ -216,7 +220,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         <div class="w3-container" id="otherInfo">
             <h2 class="at-bold">дополнительная информация</h2>
 
-            <div class="w3-container w3-white w3-round" style="margin: auto 10%; padding: 4%;">
+            <div id="oIC" class="w3-container w3-white w3-round" style="margin: auto 10%; padding: 4%;">
                 <h2 style="font-weight: bolder">АВТОМАТИЗИРОВАННЫЕ ПАРКОВОЧНЫЕ СИСТЕМЫ — ОПТИМАЛЬНОЕ УПРАВЛЕНИЕ ПАРКИНГОМ</h2>
                 <p>Автоматизированные парковочные системы — программно-аппаратный комплекс для повышения контроля, безопасности и комфорта парковочного пространства. Он находит широкое применение на следующих объектах: торгово-развлекательные центры, бизнес-центры, промышленные предприятия, гостиницы, зоны отдыха, парки и другие охраняемые территории.</p>
                 <p>На оборудование RPS инсталлируется специальное программное обеспечение. Система не только легко устанавливается на любом объекте, но и максимально эффективно настраивается под решение конкретных задач. Это позволяет организовать эффективное управление паркингом.</p>
