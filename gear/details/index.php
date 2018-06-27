@@ -359,8 +359,8 @@ $backgrounds = array(
             font-family: "AvenirNext-Regular";
             <?php echo $backgrounds[$_GET["gear"]];?>
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover;
+            background-repeat: no-repeat;
+            background-size: fixed;
         }
         ul {
             list-style: none;
@@ -383,28 +383,12 @@ $backgrounds = array(
 
         .at-tabe{
             width: 33%;
+            padding: 6px;
+            font-size: 2vw;
         }
-    </style>
-
-</head>
-
-<body class="">
-    <?php include "$root/common/navbar.php";?>
-
-    <div class="w3-container" id="first">
-        <h1 class="" style="max-width: 749px; width: 70%; margin: 10% auto 0 auto; font-family: AvenirNext-Bold; font-size: 44px; text-align: center;"><?php echo $title[$_GET["gear"]]; ?></h1>
-        <div style="max-width: 749px; width: 70%; min-width: 330px; margin: 60px auto;"><?php echo $topText[$_GET["gear"]]; ?></div>
-    </div>
-
-    <style>
         .seleced{
             font-weight: bold;
             color: #161616;
-        }
-
-        .at-tabe{
-            padding: 6px;
-            font-size: 2vw;
         }
 
         .at-tabo{
@@ -422,6 +406,16 @@ $backgrounds = array(
             style="color: #efa426; font-size: 24px; font-weight: bolder; text-indent: 0px;"
         }
     </style>
+
+</head>
+
+<body class="">
+    <?php include "$root/common/navbar.php";?>
+
+    <div class="w3-container" id="first">
+        <h1 class="" style="max-width: 749px; width: 70%; margin: 10% auto 0 auto; font-family: AvenirNext-Bold; font-size: 44px; text-align: center;"><?php echo $title[$_GET["gear"]]; ?></h1>
+        <div style="max-width: 749px; width: 70%; min-width: 330px; margin: 60px auto;"><?php echo $topText[$_GET["gear"]]; ?></div>
+    </div>
 
     <div class="w3-cell-row" style="background-color: #efa426; color: #525252; text-align: center; <?php if($_GET['gear']=='parkomats')echo 'display:none'; ?>">
         <div onclick="openCity('about');$('.seleced').removeClass('seleced'); $(this).addClass('seleced');" class="w3-button w3-cell w3-cell-middle at-tabe seleced">ПОДРОБНОЕ ОПИСАНИЕ</div>

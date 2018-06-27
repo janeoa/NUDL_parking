@@ -89,7 +89,7 @@
             }
 
             a{
-                pointer-events: all;
+                pointer-events: all!important;
             }
 		</style>
 		
@@ -184,12 +184,12 @@
                     array( "doubleIO","stoika")
                 );
             $content = array(
-                array("АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT","Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран <a href=\"/gear/details/?gear=light\" class=\"accent-coloor w3-right\">далее</a>"),
-                array("АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА STANDARD","Многофункциональная автоматизированная касса для оплаты услуг парковки - устройство премиум класса в линейке RPS. Высочайшая надежность... <a href=\"/gear/details/?gear=standart\" class=\"accent-coloor w3-right\">далее</a>"),
-                array("Двухсторонняя стойка въезда-выезда на жетонах","Двухсторонняя стойка одновременно выполняет функции въездной и выездной стойки. Такая конструкция исключает необходимость ... <a href=\"/gear/details/?gear=zjeton\" class=\"accent-coloor w3-right\">далее</a>"),
-                array("СТОЙКА ВЪЕЗДА-ВЫЕЗДА","Обеспечивают доступ клиента на парковку, управляя периферийными устройствами. Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и ... <a href=\"/gear/details/?gear=IO\" class=\"accent-coloor w3-right\">далее</a>"),
-                array("СТОЙКА ВЪЕЗДА-ВЫЕЗДА НА ЖЕТОНАХ","Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать ... <a href=\"/gear/details/?gear=IOzjeton\" class=\"accent-coloor w3-right\">далее</a>"),
-                array("ДВУХУРОВНЕВАЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА","Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым ... <a href=\"/gear/details/?gear=doubleIO\" class=\"accent-coloor w3-right\">далее</a>"),
+                array("АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT","Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран... <a href=\"/gear/details/?gear=light\" class=\"accent-coloor\">далее</a>"),
+                array("АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА STANDARD","Многофункциональная автоматизированная касса для оплаты услуг парковки - устройство премиум класса в линейке RPS. Высочайшая надежность... <a href=\"/gear/details/?gear=standart\" class=\"accent-coloor\">далее</a>"),
+                array("Двухсторонняя стойка въезда-выезда на жетонах","Двухсторонняя стойка одновременно выполняет функции въездной и выездной стойки. Такая конструкция исключает необходимость ... <a href=\"/gear/details/?gear=zjeton\" class=\"accent-coloor\">далее</a>"),
+                array("СТОЙКА ВЪЕЗДА-ВЫЕЗДА","Обеспечивают доступ клиента на парковку, управляя периферийными устройствами. Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и ... <a href=\"/gear/details/?gear=IO\" class=\"accent-coloor\">далее</a>"),
+                array("СТОЙКА ВЪЕЗДА-ВЫЕЗДА НА ЖЕТОНАХ","Въездные и выездные стойки являются важнейшими частями АСПП. Огромный функционал и гибкость позволят адаптировать ... <a href=\"/gear/details/?gear=IOzjeton\" class=\"accent-coloor\">далее</a>"),
+                array("ДВУХУРОВНЕВАЯ СТОЙКА ВЪЕЗДА-ВЫЕЗДА","Двухуровневые въездные и выездные стойки поставляются в составе АСПП RPS. Обеспечивают простой доступ на территорию паркинга как легковым ... <a href=\"/gear/details/?gear=doubleIO\" class=\"accent-coloor\">далее</a>"),
             );
             $images = array(
                 array("light.png","light2.png"),
@@ -239,7 +239,7 @@
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
                                 <div onclick="plusDivs(\''.$ids[$i][0].'\',-1)" class="w3-cell w3-cell-middle" style="height: 100%;">
                                     <svg style="zoom: 2.0" height="18" width="8">
-                                        <polygon points="7,17 7,1 1,9" style="fill:black;stroke:white;stroke-width:1px;" />
+                                        <polygon points="7,17 7,1 1,9" style="fill:rgba(0,0,0,0);stroke:white;stroke-width:1px;" />
                                     </svg>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
                                 <div onclick="plusDivs(\''.$ids[$i][0].'\',1)" class="w3-cell w3-cell-middle" style="height: 100%;">
                                     <svg style="zoom: 2.0" height="18" width="8">
-                                        <polygon points="1,17 1,1 7,9" style="fill:black;stroke:white;stroke-width:1px;" />
+                                        <polygon points="1,17 1,1 7,9" style="fill:rgba(0,0,0,0);stroke:white;stroke-width:1px;" />
                                     </svg>
                                 </div>
                             </div>
@@ -269,7 +269,7 @@
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
                                 <div onclick="plusDivs(\''.$ids[$i][0].'2\',-1)" class="w3-cell w3-cell-middle" style="height: 100%;">
                                     <svg style="zoom: 2.0" height="18" width="8">
-                                        <polygon points="7,17 7,1 1,9" style="fill:black;stroke:white;stroke-width:1px;" />
+                                        <polygon points="7,17 7,1 1,9" style="fill:rgba(0,0,0,0);stroke:white;stroke-width:1px;" />
                                     </svg>
                                 </div>
                             </div>
@@ -278,7 +278,7 @@
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
                                 <div onclick="plusDivs(\''.$ids[$i][0].'2\',1)" class="w3-cell w3-cell-middle" style="height: 100%;">
                                     <svg style="zoom: 2.0" height="18" width="8">
-                                        <polygon points="1,17 1,1 7,9" style="fill:black;stroke:white;stroke-width:1px;" />
+                                        <polygon points="1,17 1,1 7,9" style="fill:rgba(0,0,0,0);stroke:white;stroke-width:1px;" />
                                     </svg>
                                 </div>
                             </div>

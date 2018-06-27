@@ -99,6 +99,6 @@
     }
 </script>
 
-<div id="logo" style="margin-top:56px; margin-left: 10%">
+<a href="/"><div id="logo" style="margin-top:56px; margin-left: 10%">
     <img src="/img/logo.png" width="100px" height="auto" />
-</div>
+</div></a>

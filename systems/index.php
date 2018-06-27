@@ -29,7 +29,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 
             body{
                 background-color: rgba(0,0,0,0.8);
-                background-image: url("blurred.jpg");
+                background-image: url("blurred.png");
                 background-repeat: repeat-y;
                 background-position: center center;
                 background-size: cover;
