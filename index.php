@@ -54,6 +54,9 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 #third{
                     zoom: 50%;
                 }
+                /*#cars{*/
+                    /*zoom: 0.6 !important;*/
+                /*}*/
 			}
 			
 			@keyframes parkCar2 {
@@ -75,7 +78,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		?>
 		
 		<div style="width: 100%; height: 100%; position: relative; " class="" id="first">
-			<div style="position: absolute; top:30%; left: 10%; width: 60%">
+			<div style="position: absolute; top:30%; left: 10%; width: 60%; z-index: 4">
 				<h1 id="firsth11" style="text-transform: uppercase; font-family: AvenirNext-Bold; font-size: 46px;">Паркинг нового поколения</h1>
 				<div class="w3-border-white w3-border-left w3-margin-bottom" style="padding-left: 10px;">
 					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
@@ -89,7 +92,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                 </a>
 			</div>
 
-			<div id="cars">
+			<div id="cars" >
 				<div id="" style="position: absolute; right: 10%; height: 20%; top:20%;" class="at-car">
 					<img src="img/car.png" width="auto" height="100%"/>
 				</div>

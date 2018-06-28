@@ -193,7 +193,8 @@
                 array("IOzjeton.png"),
                 array("doubleIO.png"),
 
-            );?>
+            );
+            ?>
 
             <?php
             for($i=0; $i<count($ids);$i++){
@@ -226,21 +227,23 @@
                     <h2 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 36px;">'.$content[$i][0].'</h2>
                     <p style="font-family: AvenirNext-Regular; font-size: 24px;">'.$content[$i][1].'</p>
 				</div>
-				<div class="w3-cell w3-cell-middle w3-hide-small w3-hide-medium" style="width: 50%">
-					<div class="w3-display-container">
-						<div class="" style="padding-top: 90%; width: 100%;">
-						</div>
-						<div class="w3-display-middle w3-card-4" style="width: 100%; height: 85%;"></div>
-						<div class="w3-display-middle w3-white" style="width: 65%; height: 100%; "></div>
-						<div class="w3-display-topmiddle" style="width: 65%; height: 75%; ">
-                            <img class="'.$ids[$i][0].' slidePic" src="gear_photo/'.$images[$i][0].'" width="100%" height="auto">';
-                    if(count($images[$i])>1) echo '
-                            <img class="'.$ids[$i][0].' slidePic" src="gear_photo/'.$images[$i][1].'" width="100%" height="auto">';
+                <div class="w3-cell w3-cell-middle w3-hide-small w3-hide-medium" style="width: 50%">
+                    <div class="w3-display-container">
+                        <div class="" style="padding-top: 90%; width: 100%;">
+                        </div>
+                        <div class="w3-display-middle w3-card-4" style="width: 100%; height: 85%;"></div>
+                        <div class="w3-display-middle w3-white" style="width: 65%; height: 100%; "></div>
+                        <div class="w3-display-topmiddle" style="width: 65%; height: 75%; ">
+                            <a href="/gear/details/?gear='.$ids[$i][0].'">
+                                <img class="'.$ids[$i][0].' slidePic" src="gear_photo/'.$images[$i][0].'" width="100%" height="auto">';
+                        if(count($images[$i])>1) echo '
+                                <img class="'.$ids[$i][0].' slidePic" src="gear_photo/'.$images[$i][1].'" width="100%" height="auto">
+                            </a>';
                     echo
-						'</div>
-						<div class="w3-display-bottommiddle" style="font-size: 1.8vw; background-color: rgba(73,73,73,0.56); width: 65%; height: 25%; text-align: center; padding: 10px">
+                        '</div>
+                        <a style="text-decoration: none" href="/gear/details/?gear='.$ids[$i][0].'"><div class="w3-display-bottommiddle" style="font-size: 1.8vw; background-color: rgba(73,73,73,0.56); width: 65%; height: 25%; text-align: center; padding: 10px">
                             '.$content[$i][0].'
-                        </div>';
+                        </div></a>';
                     if(count($images[$i])>1)   echo
                         '<div class="w3-display-left" style="width: 17.5%; height: 10%; cursor: pointer">
                             <div class="w3-cell-row" style="width: 7px; height: 100%; margin: auto">
@@ -261,8 +264,8 @@
                             </div>
                         </div>';
                     echo '
-					</div>
-				</div>
+                    </div>
+                </div>
                 <div id="" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="imageMobFour w3-hide-large">
                     <div class="w3-display-container" style="width: 100%; margin: auto;text-shadow: 2px 2px 8px black;">
                         <img class="'.$ids[$i][0].'2 slidePic" src="gear_photo/'.$images[$i][0].'" width="100%" height="auto">';

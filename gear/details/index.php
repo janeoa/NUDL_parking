@@ -399,6 +399,10 @@ $backgrounds = array(
                 width: 100% !important;
                 padding: 10px 3% !important;
             }
+            h1{
+                margin: 0 !important;
+                width: 100%!important;
+            }
         }
 
 
