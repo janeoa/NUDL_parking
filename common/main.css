@@ -1,3 +1,30 @@
+@font-face {
+	font-family: AvenirNext;
+	src: url('/common/AvenirNextCyr/AvenirNextCyr-Regular.ttf');
+}
+
+@font-face {
+	font-family: AvenirNext-Regular;
+	src: url('/common/AvenirNextCyr/AvenirNextCyr-Regular.ttf');
+}
+
+@font-face {
+	font-family: AvenirNext-Bold;
+	src: url('/common/AvenirNextCyr/AvenirNextCyr-Bold.ttf');
+}
+
+@font-face {
+	font-family: AvenirNext-DemiBold;
+	src: url('/common/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+}
+
+@font-face {
+	font-family: AvenirNext-DemiBold;
+	src: url('/common/AvenirNextCyr/AvenirNextCyr-Demi.ttf');
+}
+
+
+
 .at-nav{
 	width: 15%;
 }
@@ -9,7 +36,8 @@
 html, body{
 	height: 100%;
 	color: white;
-    font-family: AvenirNext-Regular, 'Avenir Next';
+    /*font-family: AvenirNext-Regular;*/
+	font-family: AvenirNext-Regular;
 }
 .at-circle{
 	width: 161px;

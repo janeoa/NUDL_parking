@@ -13,9 +13,10 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         <link rel="stylesheet" href="/common/AvenirNextCyr/AvenirCyrStylesheet.css"/>
         <script src="/common/jquery.min.js"></script>
 		<link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
-		<link rel="stylesheet" href="/common/main.css"/>
-		
-		<style>
+        <link rel="stylesheet" href="/common/main.css"/>
+        <link rel="stylesheet" href="/common/AvenirNextCyr/AvenirCyrStylesheet.css"/>
+
+        <style>
 
             .at-car{
                 pointer-events: none;
@@ -79,7 +80,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		
 		<div style="width: 100%; height: 100%; position: relative; " class="" id="first">
 			<div style="position: absolute; top:30%; left: 10%; width: 60%; z-index: 4">
-				<h1 id="firsth11" style="text-transform: uppercase; font-family: AvenirNext-Bold; font-size: 46px;">Паркинг нового поколения</h1>
+				<h1 id="firsth11" style="text-transform: uppercase; font-family: AvenirNext-Bold; font-style: normal; font-weight: bold; font-size: 46px;">Паркинг нового поколения</h1>
 				<div class="w3-border-white w3-border-left w3-margin-bottom" style="padding-left: 10px;">
 					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
 				</div>
