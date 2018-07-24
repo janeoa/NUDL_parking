@@ -36,4 +36,6 @@ $headers .= 'From: <webmaster@parking.nudl.kz>' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 
+header('Location: /');
+
 ?>
