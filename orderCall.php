@@ -30,8 +30,10 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-//$headers .= 'From: <webmaster@k-p-s.kz>' . "\r\n";
+//$headers .= 'From: <webmaster@k-p-s.kz>' . "\r\n".
 $headers .= 'From: <webmaster@parking.nudl.kz>' . "\r\n";
+    "BCC: khadisha.dabayeva@nu.edu.kz, asetmalik@gmail.com" . "\r\n";
+//$headers .= 'From: <webmaster@parking.nudl.kz>' . "\r\n";
 //$headers .= 'Cc: myboss@example.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);

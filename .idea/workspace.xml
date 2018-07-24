@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e117e58-0a57-46e3-97da-92a91eda34e1" name="Default" comment="font-fix">
-      <change afterPath="$PROJECT_DIR$/common/adaptive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/fonts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/root.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderCall.php" afterDir="false" />
+    <list default="true" id="8e117e58-0a57-46e3-97da-92a91eda34e1" name="Default" comment="changed from">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/common/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/common/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/four.html" beforeDir="false" afterPath="$PROJECT_DIR$/four.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gear/details/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gear/details/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gear/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gear/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systems/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/systems/areas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systems/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/systems/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orderCall.php" beforeDir="false" afterPath="$PROJECT_DIR$/orderCall.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,7 +45,7 @@
             <entry file="file://$PROJECT_DIR$/orderCall.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="392">
-                  <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+                  <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
@@ -383,7 +371,7 @@
       <workItem from="1530281881753" duration="1769000" />
       <workItem from="1530449662361" duration="21000" />
       <workItem from="1530702757188" duration="2035000" />
-      <workItem from="1532431508894" duration="16713000" />
+      <workItem from="1532431508894" duration="17400000" />
     </task>
     <task id="LOCAL-00001" summary="MOAR for NAVBAR">
       <created>1529486764446</created>
@@ -553,11 +541,25 @@
       <option name="project" value="LOCAL" />
       <updated>1530704178226</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="huge pre-final update with many features&#10;&#10;Zeplin edits&#10;Word edits&#10;e-mail the phone">
+      <created>1532474021164</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1532474021164</updated>
+    </task>
+    <task id="LOCAL-00026" summary="bugfix: back to root on reload">
+      <created>1532474300096</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1532474300096</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93259000" />
+    <option name="totallyTimeSpent" value="93946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />
@@ -611,7 +613,9 @@
     <MESSAGE value="animation" />
     <MESSAGE value="bugfix" />
     <MESSAGE value="font-fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="font-fix" />
+    <MESSAGE value="huge pre-final update with many features&#10;&#10;Zeplin edits&#10;Word edits&#10;e-mail the phone" />
+    <MESSAGE value="bugfix: back to root on reload" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix: back to root on reload" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,7 +1025,7 @@
     <entry file="file://$PROJECT_DIR$/orderCall.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
-          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
         </state>
       </provider>
     </entry>
