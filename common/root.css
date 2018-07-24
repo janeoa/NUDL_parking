@@ -1,0 +1,87 @@
+.at-car{
+    pointer-events: none;
+}
+
+#firsth11{
+    text-transform: uppercase;
+    font-family: AvenirNext-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: calc(13px + 2.88vw);
+}
+
+#firstp1{
+    font-size: calc(13px + .61vw);
+    margin-top: 80px;
+}
+
+#cars{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#car2 {
+    position: absolute; right: 8%; height: 27%; top: 41%;
+    transform: rotate(0);
+    animation-name: parkCar2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+#first{
+    padding-top: 10% !important;
+    background-image: url('/img/first.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%; height: calc(100% - 120px); position: relative;
+}
+
+.mainbts{
+    text-decoration: none;
+    font-size: 1.3vw;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 12px 0 0 12px;
+    border: solid 2px #f5a623;
+    width: 50%;
+    height: 40px;
+    padding: 2% 0;
+}
+.nd2{
+    background-color: #f5a623;
+    border-radius: 0 12px 12px 0 !important;
+}
+
+@media only screen and (max-width: 700px) {
+    #car2 {
+        position: absolute; right: 8%; height: 27%; top:41%;
+        transform: rotate(0);
+        animation-name: parkCar2;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+    }
+}
+
+@media only screen and (max-width: 601px){
+    .at-car{
+        opacity: 0.5;
+    }
+    #third{
+        zoom: 50%;
+    }
+    #first{
+        padding-top: 50% !important;
+    }
+    /*#cars{*/
+        /*zoom: 0.6 !important;*/
+    /*}*/
+}
+
+@keyframes parkCar2 {
+    0% {right: 26%; transform: rotate(27deg);top:46%;}
+    40% {right: 14%; transform: rotate(24deg);top:44%;}
+    100% {right: 8%; transform: rotate(0); top:41%;}
+}
+

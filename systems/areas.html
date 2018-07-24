@@ -83,8 +83,15 @@
             "жилые.jpeg"
         ]
     }
+
+    var current = 0;
+
     $(document).ready(function () {
-        fillFour(0);
+        fillFour(current);
+        var yo = setInterval(function () {
+            //alert((current==5)? 0 : current+1);
+            fillFour((current==5)? 0 : current+1);
+        }, 10000);
     });
     // function blurDeMob(state) {
     //     if(state){$("#imageMobFour").css("filter","blur(5px)")}
@@ -114,6 +121,7 @@
     }
 
     function fillFour(id) {
+        current = id;
         $(".titleOfFour").text(contentOfFour.headinds[id]);
         $(".sumOfFour").html("<h4 style='text-transform: uppercase'>"+contentOfFour.headinds[id]+"</h4><ul>");
         $(".listOfFour").text("");

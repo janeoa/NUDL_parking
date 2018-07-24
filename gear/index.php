@@ -13,8 +13,11 @@
 		<script src="/common/jquery.min.js"></script>
         <link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
         <link rel="stylesheet" href="/common/main.css">
+        <link rel="stylesheet" href="/common/fonts.css"/>
+        <link rel="stylesheet" href="/common/adaptive.css"/>
 
-	</head>
+
+    </head>
 	
 	<body>
         <!--NAV -->
@@ -23,7 +26,7 @@
         ?>
 		
 		<div class="w3-container" id="first">
-			<h1 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 3.5vw; text-align: center; margin-top: 10%;">НАШЕ ОБОРУДОВАНИЕ</h1>
+			<h1 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 3.5vw; text-align: center; margin-top: 5%; padding-top: 120px;">НАШЕ ОБОРУДОВАНИЕ</h1>
 		</div>
 		
 		<style>

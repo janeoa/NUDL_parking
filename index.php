@@ -11,66 +11,14 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="/common/w3.css"/>
         <link rel="stylesheet" href="/common/AvenirNextCyr/AvenirCyrStylesheet.css"/>
+        <link rel="stylesheet" href="/common/fonts.css"/>
         <script src="/common/jquery.min.js"></script>
 		<link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
         <link rel="stylesheet" href="/common/main.css"/>
-        <link rel="stylesheet" href="/common/AvenirNextCyr/AvenirCyrStylesheet.css"/>
+        <link rel="stylesheet" href="/common/root.css"/>
+        <link rel="stylesheet" href="/common/adaptive.css"/>
 
-        <style>
-
-            .at-car{
-                pointer-events: none;
-            }
-
-			/*#car2 {*/
-			    /*position: absolute; right: 30%; transform: rotate(27deg);top:48%; height: 20%;*/
-			/*}*/
-            #car2 {
-                position: absolute; right: 10%; height: 20%; top:44%; transform: rotate(0);
-                animation-name: parkCar2;
-                animation-duration: 2s;
-                animation-timing-function: linear;
-            }
-			@media only screen and (max-width: 700px) {
-		    	#car2 {
-				    position: absolute; right: 10%; height: 20%; top:44%; transform: rotate(0);
-				    animation-name: parkCar2;
-				    animation-duration: 2s;
-				    animation-timing-function: linear;
-				}
-			}
-			
-			@media only screen and (max-width: 601px){
-				#firsth11{
-					font-size: 7vw !important;
-					padding-right: 40%;
-				}
-				#firstp1{
-					font-size: 4vw !important;
-					margin-top: 20px !important;
-				}
-                .at-car{
-                    opacity: 0.5;
-                }
-                #third{
-                    zoom: 50%;
-                }
-                /*#cars{*/
-                    /*zoom: 0.6 !important;*/
-                /*}*/
-			}
-			
-			@keyframes parkCar2 {
-			    0% {right: 30%; transform: rotate(27deg);top:48%;}
-			    40% {right: 22%; transform: rotate(24deg);top:47%;}
-			    100% {right: 10%; transform: rotate(0); top:44%;}
-			}
-            body{
-                background-image: url('img/first.jpg'); background-position: center center;
-            }
-		</style>
-
-	</head>
+    </head>
 	
 	<body>
 		<!--NAV -->
@@ -78,41 +26,42 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 			include("common/navbar.php");
 		?>
 		
-		<div style="width: 100%; height: 100%; position: relative; " class="" id="first">
-			<div style="position: absolute; top:30%; left: 10%; width: 60%; z-index: 4">
-				<h1 id="firsth11" style="text-transform: uppercase; font-family: AvenirNext-Bold; font-style: normal; font-weight: bold; font-size: 46px;">Паркинг нового поколения</h1>
-				<div class="w3-border-white w3-border-left w3-margin-bottom" style="padding-left: 10px;">
-					<p id="firstp1" style="font-size: 20px; width: 60%;  margin-top: 80px;">Умные технологии & продуманный дизайн</p>
+		<div style="" class="" id="first">
+			<div id="firsth11DIV" class="leftShift" style="position: absolute; top:23%; left: 13%; width: 60%; z-index: 4">
+				<h1 id="firsth11" style="">Паркинг нового<br/>поколения</h1>
+            </div>
+            <div class="leftShift" style="position: absolute; top:42%; left: 13%; width: 60%; z-index: 4">
+				<div id="firstp1DIV" class="w3-border-white w3-border-left w3-margin-bottom" style="padding-left: 3%; border-width: 3px !important;">
+					<p id="firstp1" style="">Умные<br class="w3-hide-large w3-hide-medium"/> технологии & продуманный<br/>дизайн</p>
 				</div>
 
                 <br>
-                <a href="/systems" style="text-decoration: none;font-size: 18px;">
-                    <div class="w3-cell w3-cell-middle" style="cursor: pointer; text-align: center; border-radius: 8px; background-color: #f5a623; width: 300px;height: 40px;">
-                    Узнать подробнее
-                    </div>
-                </a>
+                <div style=" width: 51.5%;" class="w3-cell-row w3-hide-small">
+                    <a href="/systems" style="text-decoration: none;" class="w3-cell w3-cell-middle mainbts">Подробнее</a>
+                    <div onclick="document.getElementById('id01').style.display='block'" class="w3-cell w3-cell-middle mainbts nd2">Заказать звонок</div>
+                </div>
 			</div>
 
-			<div id="cars" >
-				<div id="" style="position: absolute; right: 10%; height: 20%; top:20%;" class="at-car">
+			<div id="cars">
+				<div id="" style="position: absolute; right: 8%; height: 27%; top: 11%;" class="at-car">
 					<img src="img/car.png" width="auto" height="100%"/>
 				</div>
 				<div id="car2" style="" class="at-car">
 					<img src="img/car.png" width="auto" height="100%"/>
 				</div>
-				<div style="position: absolute; right: 10%; height: 20%; bottom:10%" class="at-car">
-					<img src="img/car.png" width="auto" height="100%"/>
-				</div>
-				<div style="position: absolute; right:  5%; width: 1.2%; bottom:33%; height: 36%; transform-origin: top right; transform: rotate(63deg); background-color: #efa426"></div>
-				<div style="position: absolute; right:  5%; width: 1.2%; bottom: 5%; height: 36%; transform-origin: top right; transform: rotate(63deg); background-color: #efa426"></div>
-				<div style="position: absolute; right:  5%; width: 1.2%; bottom:  0; height: 75%; background-color: #efa426"></div>
+                <div id="" style="position: absolute; right: 8%; height: 27%; bottom: 3%;" class="at-car">
+                    <img src="img/car.png" width="auto" height="100%"/>
+                </div>
+				<div style="position: absolute; right:  5.7%; width: 1.2%; bottom:35%; height: 36%; transform-origin: top right; transform: rotate(63deg); background-color: #efa426"></div>
+				<div style="position: absolute; right:  5.7%; width: 1.2%; bottom: 5%; height: 36%; transform-origin: top right; transform: rotate(63deg); background-color: #efa426"></div>
+				<div style="position: absolute; right:  5.7%; width: 1.2%; bottom:  0; height: 91%; background-color: #efa426"></div>
 				
 			</div>
 		</div>
 
-		<div class="w3-white" style=" padding: 3% 10%;" id="second">
-			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: 24px;"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 3px 0px">Почему мы?</span></h2>
-			<div class="w3-row" style="font-family: AvenirNext-DemiBold; font-size: 20px;">
+		<div class="w3-white" style=" padding: 2% 10%;" id="second">
+			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: calc(24px + .8vw);; min-font-size: 24px; margin-top: 0; text-transform: uppercase"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 4px 0px">Почему мы?</span></h2>
+			<div class="w3-row" style="font-family: AvenirNext-DemiBold; font-size: 20px;color: #525252;">
 				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">
 						<div class="w3-display-middle w3-jumbo"><i class="fas fa-cogs"></i></div>
@@ -163,5 +112,16 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         include ("$root/common/footer.html");
         ?>
 
+
+        <div id="id01" class="w3-modal" style="z-index: 11">
+            <div class="w3-modal-content">
+                <form class="w3-container w3-padding w3-white" action="/orderCall.php" method="post">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <label>Как к вам обратиться?</label><input name="name" placeholder="ваше имя" class="w3-input" type="text"/>
+                    <label>Ваш номер телефона</label><input name="tel" placeholder="+7(7xx)xxx-xxxx" class="w3-input" type="tel" required/>
+                    <button class="w3-button w3-margin mainbts nd2" style="border-radius: 12px!important; color: white; padding: 0; width: 200px!important;">Заказать звонок</button>                  </button>
+                </form>
+            </div>
+        </div>
 	</body>
 </html>

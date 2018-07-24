@@ -353,6 +353,9 @@ $backgrounds = array(
     <script src="/common/jquery.min.js"></script>
     <link rel="stylesheet" href="/common/fontawesome-free-5.1.0-web/css/all.css"/>
     <link rel="stylesheet" href="/common/main.css">
+    <link rel="stylesheet" href="/common/fonts.css">
+    <link rel="stylesheet" href="/common/adaptive.css"/>
+
 
     <style>
         html{
@@ -416,8 +419,8 @@ $backgrounds = array(
 <body class="">
     <?php include "$root/common/navbar.php";?>
 
-    <div class="w3-container" id="first">
-        <h1 class="" style="max-width: 749px; width: 70%; margin: 10% auto 0 auto; font-family: AvenirNext-Bold; font-size: 44px; text-align: center;"><?php echo $title[$_GET["gear"]]; ?></h1>
+    <div class="w3-container" id="first" style="padding-top: 140px;">
+        <h1 class="" style="max-width: 749px; width: 70%; margin: 0 auto 0 auto; font-family: AvenirNext-Bold; font-size: 44px; text-align: center;"><?php echo $title[$_GET["gear"]]; ?></h1>
         <div style="max-width: 749px; width: 70%; min-width: 330px; margin: 60px auto;"><?php echo $topText[$_GET["gear"]]; ?></div>
     </div>
 
