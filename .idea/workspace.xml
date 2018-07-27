@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8e117e58-0a57-46e3-97da-92a91eda34e1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/four.html" beforeDir="false" afterPath="$PROJECT_DIR$/four.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gear/details/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gear/details/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gear/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/gear/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/systems/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/systems/areas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/blurred.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/blurred.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/systems/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/systems/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/sport.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/sport.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/бизнесцентры.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/бизнесцентры.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/вокзалы.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/вокзалы.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/жилые.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/жилые.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/systems/отель.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/systems/отель.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,11 +77,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/gear/index.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="309">
-                  <caret line="227" column="78" selection-start-line="227" selection-start-column="78" selection-end-line="227" selection-end-column="78" />
+                  <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
                   <folding>
                     <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -95,9 +96,10 @@
           <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/systems/index.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-628">
-                  <caret line="115" column="74" selection-start-line="115" selection-start-column="74" selection-end-line="115" selection-end-column="74" />
+                <state relative-caret-position="309">
+                  <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
                   <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
@@ -125,7 +127,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gear/details/index.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="382">
@@ -167,7 +169,7 @@
             <entry file="file://$PROJECT_DIR$/common/fonts.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="84">
-                  <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="35" />
+                  <caret line="6" column="35" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -204,7 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>заказать</find>
       <find></find>
       <find>4</find>
       <find>IO</find>
@@ -234,6 +235,7 @@
       <find>imageMobFour</find>
       <find>theOps</find>
       <find>w3-gree</find>
+      <find>blurred.png</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -259,10 +261,10 @@
         <option value="$PROJECT_DIR$/common/main.css" />
         <option value="$PROJECT_DIR$/four.html" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/systems/index.php" />
         <option value="$PROJECT_DIR$/systems/areas.html" />
-        <option value="$PROJECT_DIR$/gear/index.php" />
         <option value="$PROJECT_DIR$/gear/details/index.php" />
+        <option value="$PROJECT_DIR$/systems/index.php" />
+        <option value="$PROJECT_DIR$/gear/index.php" />
       </list>
     </option>
   </component>
@@ -348,7 +350,7 @@
       <workItem from="1530449662361" duration="21000" />
       <workItem from="1530702757188" duration="2035000" />
       <workItem from="1532431508894" duration="17695000" />
-      <workItem from="1532694798714" duration="2330000" />
+      <workItem from="1532694798714" duration="3191000" />
     </task>
     <task id="LOCAL-00001" summary="MOAR for NAVBAR">
       <created>1529486764446</created>
@@ -539,11 +541,25 @@
       <option name="project" value="LOCAL" />
       <updated>1532474688146</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="slide optimization and font-size fix">
+      <created>1532698184640</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1532698184640</updated>
+    </task>
+    <task id="LOCAL-00029" summary="image optimization">
+      <created>1532698520321</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1532698520321</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96571000" />
+    <option name="totallyTimeSpent" value="97432000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -600,7 +616,9 @@
     <MESSAGE value="huge pre-final update with many features&#10;&#10;Zeplin edits&#10;Word edits&#10;e-mail the phone" />
     <MESSAGE value="bugfix: back to root on reload" />
     <MESSAGE value="added khadisha's e-mail" />
-    <option name="LAST_COMMIT_MESSAGE" value="added khadisha's e-mail" />
+    <MESSAGE value="slide optimization and font-size fix" />
+    <MESSAGE value="image optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="image optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -849,7 +867,7 @@
     <entry file="file://$PROJECT_DIR$/common/fonts.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="35" />
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -908,16 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/systems/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-628">
-          <caret line="115" column="74" selection-start-line="115" selection-start-column="74" selection-end-line="115" selection-end-column="74" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/four.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-961">
@@ -959,20 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gear/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="227" column="78" selection-start-line="227" selection-start-column="78" selection-end-line="227" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gear/details/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -980,6 +974,31 @@
           <folding>
             <element signature="e#0#5#0#PHP" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/systems/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gear/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="45" selection-end-line="35" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -33,7 +33,7 @@
 
             html{
                 font-family: "AvenirNext-Regular";
-                background-image: url('bg.png');
+                background-image: url('bg.jpg');
                 background-position: center center;
                 background-repeat: repeat-y;
                 background-attachment: fixed;
