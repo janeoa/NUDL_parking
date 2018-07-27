@@ -10,13 +10,19 @@
             </div>
         </div>
         <div id="thePickOfFour" class="w3-cell w3-cell-middle" style="height: 100%; width: 50%">
-            <img class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at0" data="lol" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at1" src="/img/аэропорт.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at2" src="/img/гостиницы.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at3" src="/img/жилые комплексы.png" height="auto" width="100%"/>
         </div>
     </div>
 
     <div id="mobSlidesOfFour" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="w3-hide-medium w3-hide-large" style="color: white">
         <div class="w3-display-container" style="width: 90%; margin: auto;/*text-shadow: 2px 2px 8px black;*/">
-            <img id="imageMobFour" class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at0" data="lol" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at1" src="/img/аэропорт.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at2" src="/img/гостиницы.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at3" src="/img/жилые комплексы.png" height="auto" width="100%"/>
             <div id="white" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*40%*/; height: 100%; background-color: white; opacity: 1"></div>
             <div id="orang" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*95%*/; height: 100%; background-color: #efa426; opacity: 0.6"></div>
             <!--<div class="w3-display-topmiddle titleOfFour   w3-display-hover" style="width: 90%; text-align: center; text-transform: uppercase; font-weight: bold; padding-top: 5%"></div>-->
@@ -88,9 +94,6 @@
             $("#white").animate({width:"0"});
             $("#orang").animate({width:"0"});
         }
-
-        // if(state){$("#imageMobFour").css("filter","blur(5px)")}
-        // else{$("#imageMobFour").css("filter","")}
     }
 
     function chosen(id) {
@@ -111,9 +114,9 @@
         $(".titleOfFour").text(contentOfFour.headinds[id]);
         $(".sumOfFour").html("<h4 style='text-transform: uppercase'>"+contentOfFour.headinds[id]+"</h4><ul>");
         $(".listOfFour").text("");
-        $(".imgOfFour").attr("src", "/img/"+contentOfFour.images[id]);
+        // $(".imgOfFour").attr("src", "/img/"+contentOfFour.images[id]);
         $(".imgOfFour").hide();
-        $(".imgOfFour").fadeIn();
+        $(".imgOfFour.at"+id).fadeIn();
         for (var i=0; i<contentOfFour.lists[id].length; i++){
             $(".listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
             $(".sumOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
@@ -142,8 +145,5 @@
         #titleOfFour{
             font-size: 26px!important;
         }
-    }
-    #imageMobFour:hover{
-
     }
 </style>

@@ -113,7 +113,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         include "$root/common/navbar.php";
         ?>
 
-		<div class="w3-container" style="text-align: center; padding-top: 100px;">
+		<div class="w3-container" style="text-align: center; padding-top: 0px;">
 			<h1 class="accent-coloor" style="max-width: 945px; font-family: AvenirNext-Bold; font-size: 36px; margin: 15% auto 40px auto;">АВТОМАТИЗИРОВАННАЯ СИСТЕМА УПРАВЛЕНИЯ ПЛАТНОЙ ПАРКОВКОЙ</h1>
 			<p style="font-size: 24px; font-family: AvenirNext-MediumItalic; max-width: 817px; margin: 0 auto 0 auto">Автоматизирует контроль над въездом и выездом машин на стоянку и процесс оплаты использования парковочного пространства.</p>
 		</div>

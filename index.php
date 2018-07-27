@@ -60,7 +60,7 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
 		</div>
 
 		<div class="w3-white" style=" padding: 2% 10%;" id="second">
-			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: calc(24px + .8vw);; min-font-size: 24px; margin-top: 0; text-transform: uppercase"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 4px 0px">Почему мы?</span></h2>
+			<h2 style="text-align: center; font-family: AvenirNext-Bold; font-size: /*calc(24px + .8vw);*/24px; min-font-size: 24px; margin-top: 0; text-transform: uppercase"><span style="border: #f5a623;border-style: solid; border-width: 0px 0px 4px 0px">Почему мы?</span></h2>
 			<div class="w3-row" style="font-family: AvenirNext-DemiBold; font-size: 20px;color: #525252;">
 				<div class="w3-col m6 l3 at-wedo">
 					<div class="at-circle w3-display-container">

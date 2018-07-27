@@ -363,7 +363,7 @@ $backgrounds = array(
             <?php echo $backgrounds[$_GET["gear"]];?>
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: fixed;
+            background-size: cover;
         }
         ul {
             list-style: none;
@@ -387,7 +387,7 @@ $backgrounds = array(
         .at-tabe{
             width: 33%;
             padding: 6px;
-            font-size: 2vw;
+            font-size: 1.7vw;
         }
         .seleced{
             font-weight: bold;

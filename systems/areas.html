@@ -10,13 +10,23 @@
             </div>
         </div>
         <div id="thePickOfFour" class="w3-cell w3-cell-middle" style="height: 100%; width: 50%;  background-color: rgba(0,0,0,0.2)">
-            <img class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at0" src="/systems/бизнесцентры.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at1" src="/systems/sport.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at2" src="/systems/трц.jpeg" height="auto" width="100%"/>
+            <img class="imgOfFour at3" src="/systems/отель.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at4" src="/systems/вокзалы.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at5" src="/systems/жилые.jpeg" height="auto" width="100%"/>
         </div>
     </div>
 
     <div id="mobSlidesOfFour" onmouseover="blurDeMob(true)" onmouseleave="blurDeMob(false)" class="w3-hide-medium w3-hide-large">
         <div class="w3-display-container" style="width: 90%; margin: auto;text-shadow: 2px 2px 8px black;">
-            <img id="imageMobFour" class="imgOfFour" src="/img/four.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at0" src="/systems/бизнесцентры.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at1" src="/systems/sport.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at2" src="/systems/трц.jpeg" height="auto" width="100%"/>
+            <img class="imgOfFour at3" src="/systems/отель.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at4" src="/systems/вокзалы.jpg" height="auto" width="100%"/>
+            <img class="imgOfFour at5" src="/systems/жилые.jpeg" height="auto" width="100%"/>
             <div id="white" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*40%*/; height: 100%; background-color: white; opacity: 1"></div>
             <div id="orang" class="w3-display-left" style="margin: 0; padding: 0; width: 0/*95%*/; height: 100%; background-color: #efa426; opacity: 0.6"></div>
             <div class="w3-display-middle w3-display-hover sumOfFour" style="width: 90%; padding-bottom: 3%"></div>
@@ -87,11 +97,13 @@
     var current = 0;
 
     $(document).ready(function () {
+        $(".imgOfFour").hide();
         fillFour(current);
         var yo = setInterval(function () {
             //alert((current==5)? 0 : current+1);
             fillFour((current==5)? 0 : current+1);
         }, 10000);
+
     });
     // function blurDeMob(state) {
     //     if(state){$("#imageMobFour").css("filter","blur(5px)")}
@@ -125,11 +137,10 @@
         $(".titleOfFour").text(contentOfFour.headinds[id]);
         $(".sumOfFour").html("<h4 style='text-transform: uppercase'>"+contentOfFour.headinds[id]+"</h4><ul>");
         $(".listOfFour").text("");
-        $(".imgOfFour").fadeOut("fast",function () {
-            $(".imgOfFour").attr("src", "/systems/"+contentOfFour.images[id]);
-        });
+        $(".imgOfFour").hide();
 
-        $(".imgOfFour").fadeIn('fast');
+        $(".imgOfFour.at"+id).fadeIn();
+        // $(".imgOfFour").fadeIn('fast');
         for (var i=0; i<contentOfFour.lists[id].length; i++){
             $(".listOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
             $(".sumOfFour").append("<li>"+contentOfFour.lists[id][i]+"</li>");
