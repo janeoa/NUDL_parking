@@ -207,15 +207,16 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
                         color: black;
                         padding: 3px 30px;
                         font-weight: bold;
+                        text-decoration: none;
                     }
                 </style>
 
-                <div class="about" style="top: 5%; left: 35%;">Переездные</div>
-                <div class="about" style="right: 5%; top: 28%;">RFID считыватели</div>
-                <div class="about" style="right: 1%; top: 40%;">Стойка выезда</div>
-                <div class="about" style="top: 45%; left: 15%;">Автоматизированные кассы</div>
-                <div class="about" style="bottom: 35%; left: 45%;">Стойка выезда</div>
-                <div class="about" style="bottom: 25%; right: 15%;">Камера распознавания</div>
+                <a href="/gear" class="about" style="top: 5%; left: 35%;">Переездные</a>
+                <a href="/gear" class="about" style="right: 5%; top: 28%;">RFID считыватели</a>
+                <a href="/gear" class="about" style="right: 1%; top: 40%;">Стойка выезда</a>
+                <a href="/gear" class="about" style="top: 45%; left: 15%;">Автоматизированные кассы</a>
+                <a href="/gear" class="about" style="bottom: 35%; left: 45%;">Стойка выезда</a>
+                <a href="/gear" class="about" style="bottom: 25%; right: 15%;">Камера распознавания</a>
 
             </div>
         </div>
