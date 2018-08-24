@@ -194,33 +194,6 @@ $root = realpath($_SERVER["DOCUMENT_ROOT"]);
             ?>
         </div>
 
-        <div class="w3-container" id="workingS">
-            <h2 class="at-bold">схема работы</h2>
-            <div style="width: 800px; margin: auto; position: relative">
-                <img src="carsss.png" width="800px" height="auto">
-
-                <style>
-                    .about{
-                        background-color: #f5a623;
-                        border-radius: 5px;
-                        position: absolute;
-                        color: black;
-                        padding: 3px 30px;
-                        font-weight: bold;
-                        text-decoration: none;
-                    }
-                </style>
-
-                <a href="/gear" class="about" style="top: 5%; left: 35%;">Переездные</a>
-                <a href="/gear" class="about" style="right: 5%; top: 28%;">RFID считыватели</a>
-                <a href="/gear" class="about" style="right: 1%; top: 40%;">Стойка выезда</a>
-                <a href="/gear" class="about" style="top: 45%; left: 15%;">Автоматизированные кассы</a>
-                <a href="/gear" class="about" style="bottom: 35%; left: 45%;">Стойка выезда</a>
-                <a href="/gear" class="about" style="bottom: 25%; right: 15%;">Камера распознавания</a>
-
-            </div>
-        </div>
-
         <div class="w3-container" id="otherInfo">
             <h2 class="at-bold">дополнительная информация</h2>
 
