@@ -29,38 +29,6 @@
 			<h1 class="accent-coloor" style="font-family: AvenirNext-Bold; font-size: 3.5vw; text-align: center; margin-top: 5%; padding-top: 120px;">НАШЕ ОБОРУДОВАНИЕ</h1>
 		</div>
 		
-		<div class="w3-container" id="workingS">
-<!--
-            <h2 class="at-bold" style="font-family: AvenirNext-Bold;
-               text-transform: uppercase;color: #efa426;
-                margin: 40px auto;
-                text-align: center;">схема работы</h2> 
--->
-            <div style="width: 800px; margin: auto; position: relative">
-                <img src="/systems/carsss.png" width="800px" height="auto">
-
-                <style>
-                    .about{
-                        background-color: #f5a623;
-                        border-radius: 5px;
-                        position: absolute;
-                        color: black;
-                        padding: 3px 30px;
-                        font-weight: bold;
-                        text-decoration: none;
-                    }
-                </style>
-
-                <a href="#pads" onclick="openKassa('IO'); $('.chosen').removeClass('chosen');" class="about" style="top: 5%; left: 35%;">Переездные</a>
-                <a href="#pads" onclick="openKassa('IO'); $('.chosen').removeClass('chosen');" class="about" style="right: 5%; top: 28%;">RFID считыватели</a>
-                <a href="#pads" onclick="openKassa('IO'); $('.chosen').removeClass('chosen');" class="about" style="right: 1%; top: 40%;">Стойка выезда</a>
-                <a href="#pads" onclick="openKassa('light'); $('.chosen').removeClass('chosen');" class="about" style="top: 45%; left: 15%;">Автоматизированные кассы</a>
-                <a href="#pads" onclick="openKassa('IO'); $('.chosen').removeClass('chosen');" class="about" style="bottom: 35%; left: 45%;">Стойка выезда</a>
-                <a href="#pads" onclick="openKassa('IO'); $('.chosen').removeClass('chosen');" class="about" style="bottom: 25%; right: 15%;">Камера распознавания</a>
-
-            </div>
-        </div>
-		
 		<style>
 
             html{
@@ -88,7 +56,7 @@
                 border-color: #efa426;
                 border-width: 2px;
             }
-            .at-tab-butt2.chosen{
+            .at-tab-butt2.chosen2{
                 padding: 11px 1px;
                 border-style: solid;
                 border-color: #efa426;
@@ -121,32 +89,14 @@
                 pointer-events: all!important;
             }
 		</style>
-		 
-		<div class="w3-container" id="pads" style="max-width: 1200px; padding-top: 30px; width: 80%; margin: 40px auto 0 auto">
+		
+		<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: 40px auto 0 auto">
 
             <div class="theOps w3-cell-row">
                 <div class="w3-cell w3-cell-middle at-tab-butt chosen" onclick="openKassa('light'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Парковочная касса LIGHT</div>
                 <div class="w3-cell w3-cell-middle at-tab-butt" onclick="openKassa('standart'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Парковочная касса STANDARD</div>
                 <a href="/gear/details/?gear=parkomats" style="text-decoration: none"><div class="w3-cell w3-cell-middle at-tab-butt">Паркоматы</div></a>
             </div>
-            
-            <div class="theOps  w3-cell-row w3-hide-medium w3-hide-small" style=" margin-top: 10px; /*font-size: 1.4vw;*/">
-                <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 "onclick="openKassa('zjeton'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Двухсторонняя стойка въезда-выезда на жетонах</div>
-                <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('IO'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Стойка въезда-выезда</div>
-                <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('IOzjeton'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Стойка въезда-выезда на жетонах</div>
-                <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('doubleIO'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Двухуровневая стойка въезда-выезда</div>
-            </div>
-            <div class="theOps  w3-hide-large" style=" margin-top: 80px; /*font-size: 1.4vw;*/">
-                <div class="w3-cell-row">
-                    <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('zjeton'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Двухсторонняя стойка въезда-выезда на жетонах</div>
-                    <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('IO'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Стойка въезда-выезда</div>
-                </div>
-                <div class="w3-cell-row">
-                    <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('IOzjeton'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Стойка въезда-выезда на жетонах</div>
-                    <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openKassa('doubleIO'); $('.chosen').removeClass('chosen'); $(this).addClass('chosen');">Двухуровневая стойка въезда-выезда</div>
-                </div>
-            </div>
-                    
 
             <script>
                 function openKassa(cityName) {
@@ -158,6 +108,14 @@
                     document.getElementById(cityName).style.display = "block";
                 }
 
+                function openStoika(cityName) {
+                    var i;
+                    var x = document.getElementsByClassName("stoika");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                }
 
                 var slideIndex = {
                     light:0,
@@ -180,7 +138,7 @@
                 }
                 $(document).ready(function () {
                     openKassa('light');
-//                     openKassa('zjeton');
+                    openStoika('zjeton');
 
                     showDivs('light',0);
                     showDivs('standart',0);
@@ -213,15 +171,14 @@
                 }
             </script>
 
-        
             <?php
             $ids = array(
                     array("light","kassa"),
                     array("standart","kassa"),
-                    array( "zjeton","kassa"),
-                    array( "IO","kassa"),
-                    array( "IOzjeton","kassa"),
-                    array( "doubleIO","kassa")
+                    array( "zjeton","stoika"),
+                    array( "IO","stoika"),
+                    array( "IOzjeton","stoika"),
+                    array( "doubleIO","stoika")
                 );
             $content = array(
                 array("АВТОМАТИЧЕСКАЯ ПАРКОВОЧНАЯ КАССА LIGHT","Преимущества: вдвое меньшая стоимость, высочайшая надежность с приятным дизайном и удобством использования, функциональный сенсорный экран... <a href=\"/gear/details/?gear=light\" class=\"accent-coloor\">далее</a>"),
@@ -244,6 +201,28 @@
 
             <?php
             for($i=0; $i<count($ids);$i++){
+                if($i==2){
+                    echo
+                    '<div class="" style=" height: 100px; width: 1px;"></div>
+                    <div class="theOps  w3-cell-row w3-hide-medium w3-hide-small" style=" margin-top: 80px; /*font-size: 1.4vw;*/">
+                        <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen2"onclick="openStoika(\'zjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухсторонняя стойка въезда-выезда на жетонах</div>
+                        <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда</div>
+                        <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IOzjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда на жетонах</div>
+                        <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'doubleIO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухуровневая стойка въезда-выезда</div>
+                    </div>
+                    <div class="theOps  w3-hide-large" style=" margin-top: 80px; /*font-size: 1.4vw;*/">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2 chosen2"onclick="openStoika(\'zjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухсторонняя стойка въезда-выезда на жетонах</div>
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда</div>
+                        </div>
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'IOzjeton\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Стойка въезда-выезда на жетонах</div>
+                            <div class="w3-cell w3-cell-middle at-tab-butt at-tab-butt2"onclick="openStoika(\'doubleIO\'); $(\'.chosen2\').removeClass(\'chosen2\'); $(this).addClass(\'chosen2\');">Двухуровневая стойка въезда-выезда</div>
+                        </div>
+                    </div>
+                    
+                    ';
+                }
                 //if($i>1) echo '<div class="w3-container" id="pads" style="max-width: 1200px; width: 80%; margin: auto">';
                 echo'
                 <div  id="'.$ids[$i][0].'" class="'.$ids[$i][1].' w3-cell-row " style="width: 100%; margin-top: 0px;">

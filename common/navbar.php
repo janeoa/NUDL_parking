@@ -27,7 +27,7 @@
             </div>
         </a>
         <a href="/systems/" style="text-decoration: none">
-            <div class="w3-bar-item w3-button">
+            <div class="w3-bar-item w3-button"> 
                 <span class="at-under" style="<?php if($dir=="systems") echo 'border-color: #efa426 !important; '; ?>">Системы</span>
             </div>
         </a>
@@ -77,7 +77,8 @@
 <!--</a>-->
 
 <a href="/" id="logo">
-    <img src="/img/logo.png" width="auto" height="70" />
+<!--     <img src="/img/logo.png" width="auto" height="70" /> -->
+    <img src="/img/logoWhite.png" width="auto" height="70" />
 </a>
 
 <div class="w3-hide-large w3-hide-medium" style="position: absolute; top:33px; right: 5px; z-index: 9; float: right">
